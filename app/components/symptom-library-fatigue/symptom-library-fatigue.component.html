@@ -1,0 +1,106 @@
+<div id="content-detail" class="content-d">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a [routerLink]="'/dashboard'">Tablero</a></li>
+              <li class="breadcrumb-item"><a [routerLink]="'/symptom-library'">Biblioteca de síntomas</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Fatiga</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail"> 
+                    <h2>Fatiga</h2>
+                    <div class="foods-btn">
+                    <a class="foods-btn" (click)= "logPDF('symptom-library-fatigue.pdf')" href="assets/pdf/symptom-library-fatigue.pdf" target='_blank'>Descargar pdf <i class="icon-pdf"></i> </a> 
+                    </div>
+                    <span>Escuche el audio completo de esta página a continuación</span>
+                    <img src="assets/img/stript.png" class="d-none" width="100%" />
+                    <img src="assets/img/stript-mob.png" class="mob-none" width="100%" />
+                    <br> <br>
+                    <p class="detail-pera">El cáncer o el tratamiento del cáncer pueden provocar fatiga. Es diferente a sentirse cansado por falta de sueño o de descanso.</p>
+                    <p class="detail-pera">¿Qué es la fatiga?</p>
+                    <ul class="left-side">
+                        <li>Es una sensación de cansancio constante, de falta de energía y de motivación que puede ser tanto física como mental.</li>
+                        <li>Interfiere con la vida cotidiana.</li> 
+                        <li>No mejora con el descanso.</li> 
+                    </ul>
+                    <p class="detail-pera">Las personas que tienen o han tenido cáncer pueden experimentar fatiga durante y después del tratamiento. Si siente fatiga, hable con su equipo de atención médica. Además, es conveniente compartir cualquier síntoma nuevo o cambio en los síntomas.</p>
+                    <p class="semibold-text">Las afecciones médicas que pueden contribuir a la fatiga incluyen lo siguiente:</p>
+                    <ul class="left-side">
+                        <li>El dolor crónico suele ser agotador y muchos medicamentos recetados para el dolor causan somnolencia y fatiga.</li>  
+                        <li>Una mala alimentación.</li>
+                        <li>La anemia o la disminución de la cantidad de glóbulos rojos pueden ser comunes en los pacientes con cáncer. Los pacientes con anemia pueden sentir una fatiga extrema y abrumadora.</li> 
+                    </ul>   
+                    <p class="semibold-text pt-pb">Ciertos tipos de tratamiento contribuyen a la fatiga. Por ejemplo, las personas normalmente sienten fatiga en estos momentos:</p>
+                    <ul class="left-side">
+                        <li>Unos días después de la quimioterapia.</li>
+                        <li>Unas semanas después de comenzar la radioterapia.</li>
+                        <li>Después de la inmunoterapia.</li>
+                    </ul>
+                    <p class="semibold-text pt-pb">Estrategias de autocuidado</p>
+                    <p class="detail-pera">A continuación, se incluyen algunas estrategias que puede intentar en el hogar si presenta fatiga:</p>
+                    <ul class="left-side">
+                        <li>Planifique su día de manera que tenga tiempo para descansar entre las actividades.</li>
+                        <li>Si duerme una siesta durante el día, asegúrese de que sea de menos de 30 minutos. Las siestas más largas pueden reducir su nivel de energía y dificultar el sueño por la noche.</li> 
+                        <li>Intente dormir entre 7 y 8 horas cada noche, y trate de dormirse y despertarse a la misma hora cada día. Tener un horario regular de sueño puede ayudarlo a dormir lo suficiente durante la noche.</li> 
+                    </ul>
+                    <p class="detail-pera">Manténgase activo.</p>
+                    <ul class="left-side">
+                        <li>El ejercicio regular, en especial caminar, es una buena manera de aliviar la fatiga. También puede ayudarlo a dormir mejor.</li>
+                        <li>Pruebe un ejercicio nuevo como nadar o incluso bailar. Recuerde consultar con su médico antes de comenzar un nuevo tipo de ejercicio.</li>  
+                        <li>Las sesiones cortas (de 5 a 10 minutos) múltiples de ejercicio a lo largo del día pueden ayudar a mantener los niveles de energía y reducir el agotamiento.</li> 
+                        <li>Si puede, comience hacer ejercicio entre 1 y 3 veces por semana durante 10 minutos, y luego agregue de 5 a 10 minutos a sus sesiones de ejercicio cada semana para alcanzar gradualmente las recomendaciones de actividad física de 150 minutos por semana.</li> 
+                        <li>Cada día, priorice sus tareas. Decida qué actividades son las más importantes y céntrese en ellas primero.</li> 
+                        <li>Pida a sus amigos y familiares que lo ayuden con las cosas que le resulten demasiado agotadoras o difíciles de hacer. Esto puede incluir preparar comidas, hacer tareas domésticas o hacer mandados.</li> 
+                        <li>No se esfuerce demasiado. Descanse cuando pueda y tome descansos entre las actividades.</li> 
+                    </ul>
+                    <p class="semibold-text pt-pb">Consejos de nutrición para controlar la fatiga</p>
+                    <p class="detail-pera">Como sucede con muchos otros efectos secundarios, puede controlar la fatiga en cierta medida mediante su alimentación. Esto incluye mantenerse hidratado bebiendo entre 8 y 10 vasos de líquidos sin cafeína todos los días. Otra forma de contrarrestar la fatiga es comer alimentos con alto contenido en hierro.</p>
+                    <p class="semibold-text pt-pb">Alimentos con alto contenido en hierro:</p>
+                    
+                    <div class="col-md-6 pl-pr-0">
+                        <div class="stript-box">
+                            De origen animal
+                        </div>
+                        <p class="mt-mb">Sepias;  Ostras;  Mejillones;  Cangrejo;  Almejas;  Carne de res;  Cordero;  Anchoas;  Pollo;  Pavo;  Cerdo;  Huevos;  Salmón;  Vieiras;  Camarones </p>
+                    </div>
+                    <div class="col-md-6 pl-pr-0">
+                        <div class="stript-box">
+                            De origen no animal
+                        </div>
+                        <p class="mt-mb">Ciertos cereales como Grapenuts®, Multigrain Cheerios®, Cream of Wheat® y Fiber One®;  Semillas de sésamo;  Albaricoques secos;  Frijoles de Lima, rojos o negros;  Mezcla de frutos secos;  Nueces;  Semillas de girasol;  Espinaca cocida;  Chocolate negro;  Pasas de uva;  Higos secos;  Garbanzos;  Pan de trigo;  Melaza;</p>                    
+                    </div>
+                    <p class="semibold-text pt-pb">Cómo puede ayudar su equipo de atención médica</p> 
+                    <p class="detail-pera">Existen muchos tratamientos de terapia de conversación efectivos, como la terapia cognitivo-conductual, que han demostrado ser de ayuda para los pacientes con ansiedad. Pídale a su médico una derivación para ver a un proveedor de atención de la salud mental autorizado.</p>
+                    <p class="detail-pera">Para obtener más información sobre la fatiga, haga clic en los siguientes enlaces:</p>     
+                    <ul class="left-side">
+                        <li><a (click)="logWebsite('https://www.cancer.net/es/asimilación-con-cáncer/efectos-f%C3%ADsicos-emocionales-y-sociales-del-cáncer/manejo-de-los-efectos-secundarios-f%C3%ADsicos/fatiga')" href="https://www.cancer.net/es/asimilación-con-cáncer/efectos-f%C3%ADsicos-emocionales-y-sociales-del-cáncer/manejo-de-los-efectos-secundarios-f%C3%ADsicos/fatiga" target="_blank">Acceda a Cancer.Net para obtener más información</a></li>
+                        <li><a (click)="logWebsite('https://survivorship.cancer.gov/springboard/symptoms/fatigue')" href="https://survivorship.cancer.gov/springboard/symptoms/fatigue" target="_blank">Acceda a Springboard Beyond Cancer para obtener más información</a></li>
+                    </ul>
+                    <img src="assets/img/Fatigue_B.jpg" class="mt-20" width="100%" />
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail border-top">
+                    <p class="semibold-text">Todos los síntomas</p> 
+                    <ul class="right-side-list">
+                        <li><a href="#/symptom-library-pain">Dolor</a></li>
+                        <li class="active"><a href="#/symptom-library-fatigue">Fatiga</a></li>
+                        <li><a href="#/symptom-library-depression">Tristeza</a></li>
+                        <li><a href="#/symptom-library-anxiety">Ansiedad</a></li> 
+                        <li><a href="#/symptom-library-insomnia">Insomnio</a></li>
+                        <li><a href="#/symptom-library-physicalfunction">Función física</a></li>
+                        <li><a href="#/symptom-library-nausea">Náuseas y vómitos</a></li>
+                        <li><a href="#/symptom-library-sexlife">Cambios en su vida sexual</a></li>
+                        <li><a href="#/symptom-library-breath">Falta de aire</a></li>
+                        <li><a href="#/symptom-library-constipation">Estreñimiento</a></li>
+                        <li><a href="#/symptom-library-diarrhea">Diarrea</a></li>
+                        <li><a href="#/symptom-library-neuropathy">Neuropatía periférica</a></li>
+                        <li><a href="#/symptom-library-lymphedema">Linfedema</a></li>                        
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

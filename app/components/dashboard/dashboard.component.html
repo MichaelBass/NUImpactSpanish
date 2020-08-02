@@ -1,0 +1,44 @@
+<div class="disclaimer" *ngIf="isWarn">
+	<div class="container-fluid">
+		<div class="container"> 
+			<p>
+			My NM Care Corner no tienen la intención de reemplazar la atención o el manejo clínico por parte de un proveedor de atención médica.  Si tiene una emergencia, comuníquese con su proveedor de atención médica.
+			</p>
+		</div>
+		<span>
+			<a style="" href="javascript:void(0)" (click)="dismiss()">Descartar </a>
+			<i class="icon-close" (click)="dismiss()"></i>
+		</span>
+	</div>	
+</div>
+<div class="container mr-150">
+	<div class="top-content clearfix">
+		<div class="row">
+			<div class="col-md-4 border-right">
+				<img src="assets/img/my-dash.png" class="profile-dashboard">
+			   	<h2>Mi tablero</h2>
+			</div>
+			<div class="col-md-7">
+				<p class="top-head">{{title}}</p>
+				<p class="top-head">Recuerde que siempre puede visitar la biblioteca de síntomas y otras secciones en este sitio web en cualquier momento cuando quiera obtener más información sobre un síntoma y las formas para manejarlo con su equipo de atención médica.</p>
+			</div>
+		</div>	
+	</div>
+	<div class="content-grid clearfix row">
+		<div class="col-md-3" *ngFor="let cardsrc of card">
+			<mat-card >
+			  <img mat-card-image [src]="cardsrc.src" alt="Photo of a Shiba Inu" width="100%">
+			  <mat-card-content>
+			  	<h4 class="card-title">{{cardsrc.label}}</h4>
+			  </mat-card-content>
+			  <mat-divider></mat-divider>
+			  <mat-card-actions>
+			    <a [routerLink]="['/',cardsrc.route]" ><i class="material-icons">arrow_forward </i>Leer sobre el síntoma</a>
+			  </mat-card-actions>
+			</mat-card>
+		</div>
+	</div>
+	<div class="text-center view-more">
+		<button mat-stroked-button (click)="displayAll()">Ver más</button>
+	</div>
+</div>

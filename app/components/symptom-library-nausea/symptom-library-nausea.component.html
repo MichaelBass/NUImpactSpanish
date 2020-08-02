@@ -1,0 +1,86 @@
+<div id="content-detail" class="content-d">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a [routerLink]="'/dashboard'">Tablero</a></li>
+              <li class="breadcrumb-item"><a [routerLink]="'/symptom-library'">Biblioteca de síntomas</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Náuseas y vómitos</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail"> 
+                    <h2>Náuseas y vómitos</h2>
+                    <div class="foods-btn">
+                    <a class="foods-btn" (click)= "logPDF('symptom-library-nausea.pdf')" href="assets/pdf/symptom-library-nausea.pdf" target='_blank'>Descargar pdf <i class="icon-pdf"></i> </a> 
+                    </div>
+                    <span>Escuche el audio completo de esta página a continuación</span>
+                    <img src="assets/img/stript.png" class="d-none" width="100%" />
+                     <img src="assets/img/stript-mob.png" class="mob-none" width="100%" />
+                    <br> <br>
+                    <p class="detail-pera">Las náuseas se producen cuando uno se siente mal o tiene malestar en el estómago, lo que puede ir acompañado de ganas de vomitar. A veces, puede vomitar sin tener náuseas o sin haber comido recientemente. Puede sentir más saliva en la boca o un aumento de la sudoración cuando tiene náuseas o antes de vomitar.</p>
+                    <p class="detail-pera">Muchos tipos de quimioterapia pueden causar náuseas y vómitos leves o graves. La radioterapia, en especial en el cerebro, la médula espinal, el abdomen y la pelvis, también puede causar náuseas y vómitos.</p>
+                    <p class="detail-pera">Si bien las náuseas y los vómitos leves son incómodos, no suelen causar problemas graves. Sin embargo, vomitar mucho y muy seguido es peligroso, ya que puede ir acompañado de deshidratación y pérdida de peso.</p>
+                    <p class="semibold-text pt-pb">Estrategias de autocuidado</p>
+                    <ul class="left-side">
+                        <li>Don’t lie down right after you eat. Stay upright. If you're vomiting, sit upright or lie on your side.</li>
+                        <li>When you feel sick to your stomach, breathe deeply and try to distract yourself with TV or music.</li>
+                        <li>Try to stay hydrated if you’re vomiting. This can be hard, as you may not feel like drinking fluids. It may help to:</li>
+                        <ul class="left-side">
+                            <li>Beba líquidos lentamente y en pequeñas cantidades a lo largo de todo el día.</li>
+                            <li>Chupe o coma pequeños trozos de paletas o de hielo.</li>
+                            <li>Beba entre las comidas, en vez de hacerlo durante las comidas.</li>
+                        </ul>
+                        <li>Preste atención a lo que come y a los alimentos que aumentan las náuseas para poder evitarlos.</li> 
+                        <li>Coma entre 4 y 5 comidas pequeñas al día en vez de 3 comidas abundantes.</li>
+                        <li>Coma y beba despacio y mastique bien la comida.</li>
+                        <li>Intente comer los alimentos fríos o a temperatura ambiente, lo que puede disminuir los olores o sabores fuertes.</li>
+                        <li>Pida a otros que le preparen la comida si los olores le provocan náuseas.</li>
+                        <li>No se obligue a comer alimentos cuando tenga náuseas.</li>
+                        <li>Chupe caramelos duros sin azúcar, como mentas. También pueden ayudar los caramelos sin azúcar que contienen jengibre.</li>
+                        <li>Coma alimentos que no sean pesados para el estómago, como alimentos blandos y fáciles de digerir.</li> 
+                    </ul>
+                    <br>   
+
+                    <div class="col-md-6 pl-pr-0">
+                        <div class="stript-box">Qué comer:</div>
+                        <p class="mt-mb">Tostadas y galletas; Fideos solos; Frutas y verduras blandas o ligeras; Yogur; Sorbetes; Bizcocho ligero; Bretzels; Pollo sin piel (al horno o asado, no frito); Avena</p>
+                    </div>
+                    <div class="col-md-6 pl-pr-0">
+                        <div class="stript-box">Qué NO comer:</div>
+                        <p class="mt-mb">Comidas grasosas; Alimentos grasos; Frituras; Comidas picantes; Alimentos muy dulces; Alimentos con olores fuertes; Alimentos calientes<br><br><br></p>                    
+                    </div>
+                    
+                    <p class="semibold-text pt-pb">Cómo puede ayudar su equipo de atención médica</p> 
+                    <p class="detail-pera">Consulte a su equipo de atención médica si las náuseas y los vómitos persisten o empeoran. Del mismo modo, si tiene vómitos durante más de 1 día, infórmeselo a su médico. Quizás pueda darle algún medicamento para prevenir las náuseas y los vómitos o referirlo a un proveedor que le enseñe técnicas para controlar las náuseas sin medicamentos.</p>
+                    <p class="detail-pera">Para conocer más sobre las náuseas y los vómitos haga clic en los siguientes enlaces:</p>
+                     <ul class="left-side">
+                        <li><a (click)="logWebsite('https://www.cancer.net/es/asimilación-con-cáncer/efectos-f%C3%ADsicos-emocionales-y-sociales-del-cáncer/manejo-de-los-efectos-secundarios-f%C3%ADsicos/náuseas-y-vómitos')" href="https://www.cancer.net/es/asimilación-con-cáncer/efectos-f%C3%ADsicos-emocionales-y-sociales-del-cáncer/manejo-de-los-efectos-secundarios-f%C3%ADsicos/náuseas-y-vómitos" target="_blank">Acceda a Cancer.net para obtener más información</a></li>
+                        <li><a (click)="logWebsite('https://survivorship.cancer.gov/springboard/symptoms/nausea')" href="https://survivorship.cancer.gov/springboard/symptoms/nausea" target="_blank">Acceda a Springboard Beyond Cancer para obtener más información</a></li>
+                    </ul>
+                    <img src="assets/img/NauseaandVomiting_B.jpg" class="mt-20" width="100%" />
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail border-top">
+                    <p class="semibold-text">Todos los síntomas</p> 
+                    <ul class="right-side-list">
+                        <li><a href="#/symptom-library-pain">Dolor</a></li>
+                        <li><a href="#/symptom-library-fatigue">Fatiga</a></li>
+                        <li><a href="#/symptom-library-depression">Tristeza</a></li>
+                        <li><a href="#/symptom-library-anxiety">Ansiedad</a></li> 
+                        <li><a href="#/symptom-library-insomnia">Insomnio</a></li>
+                        <li><a href="#/symptom-library-physicalfunction">Función física</a></li>
+                        <li class="active"><a href="#/symptom-library-nausea">Náuseas y vómitos</a></li>
+                        <li><a href="#/symptom-library-sexlife">Cambios en su vida sexual</a></li>
+                        <li><a href="#/symptom-library-breath">Falta de aire</a></li>
+                        <li><a href="#/symptom-library-constipation">Estreñimiento</a></li>
+                        <li><a href="#/symptom-library-diarrhea">Diarrea</a></li>
+                        <li><a href="#/symptom-library-neuropathy">Neuropatía periférica</a></li>
+                        <li><a href="#/symptom-library-lymphedema">Linfedema</a></li>                        
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

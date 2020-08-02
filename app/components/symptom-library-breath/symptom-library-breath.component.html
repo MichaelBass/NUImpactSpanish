@@ -1,0 +1,80 @@
+<div id="content-detail" class="content-d">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a [routerLink]="'/dashboard'">Tablero</a></li>
+              <li class="breadcrumb-item"><a [routerLink]="'/symptom-library'">Biblioteca de síntomas</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Falta de aire</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail"> 
+                    <h2>Falta de aire</h2>
+                    <div class="foods-btn">
+                    <a class="foods-btn" (click)= "logPDF('symptom-library-breath.pdf')" href="assets/pdf/symptom-library-breath.pdf" target='_blank'>Descargar pdf <i class="icon-pdf"></i> </a> 
+                    </div>                    
+                    <span>Escuche el audio completo de esta página a continuación</span>
+                    <img src="assets/img/stript.png" class="d-none" width="100%" />
+                     <img src="assets/img/stript-mob.png" class="mob-none" width="100%" />
+                    <br> <br>
+                    <p class="detail-pera">Algunas personas con cáncer experimentan falta de aire. También se conoce como disnea. Cuando le falta el aire, puede sentir:</p>
+                    <ul class="left-side">
+                        <li>Falta de aliento</li>
+                        <li>Sibilancia</li>
+                        <li>Molestias al respirar</li>
+                        <li>Sensación de que no ingresa suficiente aire al inhalar</li>
+                        <li>Sensación de que el corazón late más rápido</li>
+                        <li>Mareos o aturdimiento</li>
+                    </ul><br>
+                    <p class="detail-pera"><b>Nota:</b> es importante que le diga a su médico si tiene dificultad para respirar.</p><br>
+                    <p class="detail-pera">La falta de aire puede tener distintas causas; puede ser provocada por el cáncer o por los tratamientos para el cáncer.</p> 
+                    <p class="detail-pera">Un paso importante para controlar la disnea es descubrir y tratar la causa de fondo. Una vez que entiendan mejor la causa, usted y su equipo de atención médica podrán analizar las estrategias de autocuidado y los tratamientos adecuados.</p>
+
+                    <p class="semibold-text pt-pb">Estrategias de autocuidado</p>
+                    <ul class="left-side">
+                        <li>Mantenga el aire de su casa lo más libre posible de humo, polvo, pelo de mascotas y caspa.</li>
+                        <li>Use un humidificador.</li>
+                        <li>El aire fresco puede ayudar. Use su termostato para bajar la temperatura de su habitación o siéntese frente a un ventilador.</li>
+                        <li>Siéntese en posición recta y, al acostarse, use almohadas para mantener la cabeza levantada.</li>
+                        <li>Mirar por la ventana o entrar a una habitación vacía pueden darle una sensación de espacio abierto.</li>
+                        <li>Use la meditación o la respiración consciente para mantener la calma cuando sienta que le falta el aire. Practique respirar de esta manera: Inhale profundamente por la nariz, luego exhale con los labios fruncidos por el doble de tiempo.</li>
+                        <li>Distráigase de sentimientos incómodos haciendo actividades que le gusten y que lo tranquilicen, como tejer, leer o escuchar música.</li>
+                    </ul>
+                    <br>    
+                    <p class="semibold-text pt-pb">Cómo puede ayudar su equipo de atención médica</p>
+                    <ul class="left-side">
+                        <li>Puede consultar a su equipo de atención médica sobre medicamentos que pueden ayudar, como medicamentos contra la ansiedad o los medicamentos para la respiración.</li> 
+                        <li>Si la dificultad para respirar es significativa, su equipo de atención médica puede recomendar la terapia con oxígeno.</li>
+                        <li>Si la falta de aire no mejora y siente dolor en el pecho, solicite atención médica de inmediato.</li>
+                    </ul>
+                    <p class="detail-pera">Para aprender más sobre la falta de aire haga clic en el siguiente enlace:</p>
+                     <ul class="left-side">
+                        <li><a (click)="logWebsite('https://www.cancer.net/es/asimilación-con-cáncer/efectos-f%C3%ADsicos-emocionales-y-sociales-del-cáncer/manejo-de-los-efectos-secundarios-f%C3%ADsicos/dificultad-para-respirar-o-disnea')" href="https://www.cancer.net/es/asimilación-con-cáncer/efectos-f%C3%ADsicos-emocionales-y-sociales-del-cáncer/manejo-de-los-efectos-secundarios-f%C3%ADsicos/dificultad-para-respirar-o-disnea" target="_blank">Acceda a Cancer.net para obtener más detalles:</a></li>
+                    </ul>
+                    <img src="assets/img/ShortnessofBreath_B.jpg" class="mt-20" width="100%" />                    
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail border-top">
+                    <p class="semibold-text">Todos los síntomas</p> 
+                    <ul class="right-side-list">
+                        <li><a href="#/symptom-library-pain">Dolor</a></li>
+                        <li><a href="#/symptom-library-fatigue">Fatiga</a></li>
+                        <li><a href="#/symptom-library-depression">Tristeza</a></li>
+                        <li><a href="#/symptom-library-anxiety">Ansiedad</a></li> 
+                        <li><a href="#/symptom-library-insomnia">Insomnio</a></li>
+                        <li><a href="#/symptom-library-physicalfunction">Función física</a></li>
+                        <li><a href="#/symptom-library-nausea">Náuseas y vómitos</a></li>
+                        <li><a href="#/symptom-library-sexlife">Cambios en su vida sexual</a></li>
+                        <li class="active"><a href="#/symptom-library-breath">Falta de aire</a></li>
+                        <li><a href="#/symptom-library-constipation">Estreñimiento</a></li>
+                        <li><a href="#/symptom-library-diarrhea">Diarrea</a></li>
+                        <li><a href="#/symptom-library-neuropathy">Neuropatía periférica</a></li>
+                        <li><a href="#/symptom-library-lymphedema">Linfedema</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

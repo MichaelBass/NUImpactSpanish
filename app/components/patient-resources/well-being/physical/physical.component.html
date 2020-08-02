@@ -1,0 +1,176 @@
+<div id="healthy-foods" class="">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Tablero</a></li>
+              <li class="breadcrumb-item d-none"><a href="#">...</a></li>
+              <li class="breadcrumb-item mob-hidden"><a href="#/patient-resources">Recursos para pacientes</a></li>
+              <li class="breadcrumb-item"><a href="#/patient-resources/well-being">Enhancing Well-Being</a></li>
+            <li class="breadcrumb-item active mob-hidden" aria-current="page">Actividad física</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail pt-0">
+                    <div class="foods-btn">
+                        <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Agregar a favoritos' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
+                        <a (click)= "logPDF('physical.pdf')" href="assets/pdf/physical.pdf" target='_blank'>Descargar pdf <i class="icon-pdf"></i> </a>
+                    </div>
+                    <h2>Actividad física</h2>
+                    <span>Escuche el audio completo de esta página a continuación</span>
+                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
+                    <br><br>
+                    <p class="detail-pera">El ejercicio frecuente puede reducir las probabilidades de que ciertos tipos de cáncer vuelvan a aparecer. Durante el tratamiento, como la quimioterapia y la radioterapia, algunas personas pueden sentir fatiga y el ejercicio puede ayudar a aliviarla. Salir a caminar puede ser la mejor forma de hacer ejercicio durante el tratamiento. Hacer ejercicio con regularidad también puede ser una forma de concentrarse en otras cosas además del cáncer. El ejercicio moderado, como caminar 30 minutos varias veces a la semana, puede ayudar a reducir el estrés y mejorar la salud y el estado de ánimo.</p>
+                    <p class="detail-pera">Si no estás acostumbrado a hacer ejercicio, aumenta de a poco la duración y la intensidad. Sigue aumentando el tiempo de ejercicio hasta llegar a los 30 minutos de actividad moderada a intensa por día. Si no puedes hacer actividad durante 30 minutos seguidos, intenta hacer dos períodos de 15 minutos o 3 períodos de 10 minutos.</p>
+                    <p class="bold-text pt-pb">¿Qué es la actividad moderada y la actividad intensa?</p>
+                    <p class="detail-pera">La actividad moderada es cualquier cosa que te haga respirar con la misma dificultad que cuando caminas a paso ligero. Durante las actividades moderadas, notarás un ligero aumento en la frecuencia cardíaca y la respiración, pero es posible que no sudes.</p>
+                    <p class="detail-pera">Las actividades intensas suelen involucrar el uso de grandes grupos musculares y provocan un aumento notable de la frecuencia cardíaca, la profundidad y frecuencia de respiración y el sudor.</p>
+                    <p class="detail-pera">Ejemplos de actividades moderadas:</p>  
+                    <ul class="left-side">
+                        <li>Caminata</li> 
+                        <li>Patinar a un ritmo tranquilo</li>
+                        <li>Hacer yoga</li>
+                        <li>Jugar al frisbi</li>
+                        <li>Hacer jardinería</li>
+                    </ul> 
+                    <p class="detail-pera">Ejemplos de actividades intensas:</p>  
+                    <ul class="left-side">
+                        <li>Trotar</li> 
+                        <li>Correr</li>
+                        <li>Saltar la cuerda</li>
+                        <li>Practicar karate</li>
+                        <li>Escalar</li>
+                    </ul>
+                    <p class="detail-pera">Una forma fácil de determinar tu intensidad es hacer una "prueba de conversación". Pregúntate si podrías mantener una conversación mientras haces ejercicio.</p>  
+                    <ul class="left-side">
+                        <li>Si puedes cantar, estás haciendo una actividad de poca intensidad.</li>
+                        <li>Si puedes mantener una conversación sin problemas, estás haciendo una actividad moderada.</li> 
+                        <li>Si te quedas sin aliento y no puedes hablar con otra persona, estás haciendo una actividad intensa.</li> 
+                    </ul>
+                    <p class="bold-text pt-pb">Consejos para ayudarte a ser y mantenerte más activo</p> 
+                    <ul class="left-side">
+                        <li>Comienza de a poco.</li> 
+                        <li>Recuerda que hacer un poco de ejercicio es mejor que no hacer nada.</li>
+                        <li>Busca una actividad que disfrutes.</li>
+                        <li>Establece metas realistas para tu actividad.</li> 
+                        <li>Supervisa tu progreso con un registro diario, un dispositivo de control de ejercicio o una aplicación en tu teléfono inteligente.</li>
+                        <li>Busca personas que te apoyen y te animen.</li> 
+                        <li>Sé realista en cuanto a tus expectativas sobre los beneficios de la actividad física y el plazo para alcanzarlos.</li> 
+                        <li>Reconoce tu esfuerzo y progreso con recompensas saludables.</li>
+                        <li>Presta atención a los pequeños éxitos cuando empieces a hacer ejercicio.</li>
+                        <li>Piensa en las situaciones en las que es más probable que no estés activo. Trata de preverlas y planifica con anticipación.</li> 
+                    </ul>
+                    <p class="bold-text pt-pb">Estrategias para hacer más actividad en tu día a día</p>
+                    <ul class="left-side">
+                        <li>Usa las escaleras en vez del ascensor.</li>
+                        <li>Aparca más lejos de la puerta principal.</li>
+                        <li>Quédate de pie en lugar de sentarte.</li> 
+                        <li>Da un paseo en la hora del almuerzo.</li>
+                        <li>Camina o ve en bicicleta a tu destino en vez de conducir.</li>
+                        <li>Realiza estiramientos, camina en el lugar o usa equipo de ejercicio mientras miras la televisión.</li>
+                        <li>Camina 10 minutos por la mañana o por la noche.</li>
+                        <li>Juega afuera con tus hijos.</li>
+                        <li>Saca a pasear a tu perro.</li> 
+                        <li>Da un paseo cuando estés frustrado o aburrido.</li>
+                        <li>Crea tu propio jardín y consérvalo.</li>
+                        <li>Haz una caminata con un amigo en vez de reunirse para comer o tomar un café.</li>
+                        <li>Organiza caminatas en el trabajo.</li>  
+                    </ul>
+                    <p class="bold-text pt-pb">Beneficios de la actividad física</p>
+                    <p class="detail-pera">Mantenerte activo físicamente es una de las mejores cosas que puedes hacer por tu salud. Te ayudará a mantener un peso saludable y a reducir el riesgo de padecer enfermedades cardíacas, derrames cerebrales y diabetes.</p> 
+                    <p class="detail-pera">La actividad física tiene los siguientes beneficios en los pacientes con cáncer y los sobrevivientes:</p> 
+                    <p class="detail-pera">Reducción de:</p>
+                    <ul class="left-side">
+                        <li>Fatiga</li>
+                        <li>Depresión</li> 
+                        <li>Ansiedad</li>
+                        <li>Trastornos del sueño</li> 
+                        <li>Afecciones crónicas</li>
+                    </ul>
+                    <p class="detail-pera">Mejora de:</p>
+                    <ul class="left-side"> 
+                        <li>Calidad de vida</li>
+                        <li>Aspecto y autoestima</li> 
+                        <li>Estado de ánimo</li>
+                        <li>Sueño</li>
+                        <li>Función sexual</li> 
+                        <li>Energía</li>
+                        <li>Salud ósea</li>
+                        <li>Fuerza muscular</li>
+                        <li>Función cognitiva</li>
+                    </ul>
+
+                    <p class="bold-text pt-pb">Medidas de seguridad</p>
+                    <p class="detail-pera">Antes de empezar un programa de entrenamiento, es importante que consultes con tu médico para saber si la actividad física no es peligrosa para ti. Una vez que el médico te autorice, es importante que tengas cuidado al empezar a hacer ejercicio para evitar lesiones y garantizar el éxito.</p> 
+                    <ul class="left-side">
+                        <li>Empieza lentamente y aumenta la intensidad y el tiempo de las sesiones de ejercicio de forma gradual.</li>
+                        <li>Controla la intensidad durante la sesión de ejercicio.</li> 
+                        <li>Realiza descansos cuando lo necesites.</li>
+                        <li>Realiza series cortas de 5 a 10 minutos si no puedes hacer series más largas.</li>
+                        <li>Mantente hidratado.</li>
+                        <li>Ten siempre un teléfono cerca en caso de emergencia.</li>
+                    </ul>
+                    <p class="detail-pera">Consideraciones especiales:</p>
+                    <ul class="left-side">
+                        <li>Si tienes anemia, retrasa la actividad hasta que mejore la anemia.</li> 
+                        <li>Si tu sistema inmunitario está debilitado, evita los gimnasios y otros espacios públicos hasta que los recuentos de glóbulos blancos regresen a niveles seguros.</li>
+                        <li>Si estás recibiendo radioterapia, evita las piscinas porque el cloro puede irritar la piel.</li>
+                        <li>Si tienes dolor en las articulaciones, realiza actividades de bajo impacto como caminar o andar en bicicleta.</li>  
+                    </ul>
+                    <p class="detail-pera">Si padeces de neuropatía periférica, tienes problemas de equilibrio o te preocupa la posibilidad de caerte, haz lo siguiente:</p> 
+                    <ul class="left-side">
+                        <li>Agárrate de las barandas de la caminadora o de cualquier otro equipo para hacer ejercicio.</li>
+                        <li>Realiza ejercicio sobre superficies parejas.</li>
+                        <li>No uses ropa que roce o se arrastre por el suelo.</li>
+                        <li>Usa un nudo doble en el zapato.</li>
+                    </ul>
+                    <p class="bold-text  pt-pb">¿Ser sedentario tiene alguna relación con los riesgos para la salud?</p> 
+                    <ul class="left-side"> 
+                        <li>Sí. Mediante estudios se ha demostrado que el sedentarismo, como ver la televisión, estar sentado o tumbado durante mucho tiempo, es un factor de riesgo asociado con el desarrollo de afecciones crónicas, incluido el cáncer, la enfermedad cardiovascular y la diabetes tipo 2, y la muerte prematura.</li>
+                    </ul>
+                    <p class="bold-text  pt-pb"><u>Recursos:</u></p>
+                    <p class="detail-pera">Norte/Noroeste:</p>
+                    <ul class="left-side">
+                    <li><a (click)="logWebsite('https://www.lakeforesthfc.com/?doing_wp_cron=1584979354.0781970024108886718750')" href="https://www.lakeforesthfc.com/?doing_wp_cron=1584979354.0781970024108886718750" target="_blank">Northwestern Medicine Lake Forest Health and Fitness Center</a></li> 
+                    <li><a (click)="logWebsite('https://www.nm.org/locations/grayslake-outpatient-center')" href="https://www.nm.org/locations/grayslake-outpatient-center" target="_blank">Northwestern Medicine Grayslake Outpatient Center</a></li>
+                    <li><a (click)="logWebsite('https://www.cancerwellness.org')" href="https://www.cancerwellness.org" target="_blank">Cancer Wellness Center</a> - Ubicaciones en Grayslake and Northbrook</li>
+                    </ul>
+                    <p class="detail-pera">Chicago central:</p>
+                    <ul class="left-side">
+                    <li><a (click)="logWebsite('https://www.gildasclubchicago.org/get-support/programs/para-español')" href="https://www.gildasclubchicago.org/get-support/programs/para-español" target="_blank">Gilda's Club Chicago:</a></li> 
+                    <li><a (click)="logWebsite('https://wellnesshouse.org/program-locations')" href="https://wellnesshouse.org/program-locations" target="_blank">Wellness House</a> – Ejercicios para el cáncer en Mile Square Health Center</li>
+                    <li><a (click)="logWebsite('https://www.recoveryonwater.org')" href="https://www.recoveryonwater.org" target="_blank">Recover on Water (Cáncer de seno)</a> - Clases de remo para pacientes y sobrevivientes de cáncer de seno</li> 
+                    </ul>
+                    <p class="detail-pera">Oeste:</p>
+                    <ul class="left-side">
+                    <li><a (click)="logWebsite('https://www.livestrong.org/ymca-search')" href="https://www.livestrong.org/ymca-search" target="_blank">Livestrong at the YMCA</a> – Los programas se encuentran en Berwyn y Oak Park</li>
+                    <li><a (click)="logWebsite('https://wellnesshouse.org/program-locations')" href="https://wellnesshouse.org/program-locations" target="_blank">Wellness House</a> en Hinsdale</li>
+                    <li><a (click)="logWebsite('https://livingwellcrc.org')" href="https://livingwellcrc.org" target="_blank">LivingWell Cancer Resource Center</a> en Geneva</li>
+                    </ul>
+                    <p class="detail-pera">Sur/Suroeste:</p>
+                    <ul class="left-side">
+                    <li><a (click)="logWebsite('https://cancersupportcenter.org')" href="https://cancersupportcenter.org" target="_blank">Cancer Support Center</a> en Homewood</li>
+                    </ul>
+                    <img src="assets/img/PhysicalActivity_B.jpg" class="mt-20" width="100%" />
+                </div>   
+            </div> 
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail pb-0 border-top">
+                    <p class="semibold-text light-height">Treatment Symptom Management</p> 
+                    <ul class="right-side-list mt-20">
+                        <li><a [routerLink]="'/patient-resources/well-being/talking'">Hablar con su equipo de atención médica</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/social'">Apoyo social</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/stress'">Manejo del estrés</a></li>
+                        <li class="active" ><a [routerLink]="'/patient-resources/well-being/physical'">Actividad física</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/problem'">Solución de problemas bajo estrés</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/smokingcessation'">Dejar de fumar y el abuso de sustancias</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/sunprotection'">Protección solar</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/supportive'">Oncología de apoyo y cuidados paliativos</a></li>
+                        <br><br>
+                        <li><a [routerLink]="'/patient-resources/well-being'"> < REGRESAR A Enhancing Well-Being</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

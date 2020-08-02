@@ -1,0 +1,91 @@
+<div id="content-detail" class="content-d">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a [routerLink]="'/dashboard'">Tablero</a></li>
+              <li class="breadcrumb-item"><a [routerLink]="'/symptom-library'">Biblioteca de síntomas</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Diarrea</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail"> 
+                    <h2>Diarrea</h2>
+                    <div class="foods-btn">
+                    <a class="foods-btn" (click)= "logPDF('symptom-library-diarrhea.pdf')" href="assets/pdf/symptom-library-diarrhea.pdf" target='_blank'>Descargar pdf <i class="icon-pdf"></i> </a> 
+                    </div> 
+                    <span>Escuche el audio completo de esta página a continuación</span>
+                    <img src="assets/img/stript.png" class="d-none" width="100%" />
+                     <img src="assets/img/stript-mob.png" class="mob-none" width="100%" />
+                    <br> <br>
+                    <p class="semibold-text pt-pb">Nota: Si tiene diarrea severa, informe a su médico.</p> 
+                    <p class="detail-pera">La diarrea es un efecto secundario común que causa movimientos intestinales más frecuentes y heces blandas o acuosas. Estos movimientos intestinales están a veces (pero no siempre) acompañados por calambres abdominales. La diarrea ocurre porque su cuerpo no está absorbiendo suficiente agua de su comida.</p>
+                    <p class="detail-pera">La diarrea la mayoría de las veces es ocasionada por la quimioterapia u otros medicamentos, pero ocasionalmente puede resultar de una infección. Los individuos con cáncer de páncreas pueden sufrir de diarrea cuando el páncreas no está funcionando de forma apropiada.</p>                 
+                    <p class="detail-pera">La diarrea leve por lo general no conlleva a problemas graves, aunque puede ser incómodo. Sin embargo, la diarrea intensa puede causar deshidratación y eventualmente con problemas de salud más graves. Es mejor prevenir la diarrea o tratarla lo antes posible.</p>
+                    <p class="semibold-text pt-pb">Estrategias de autocuidado</p> 
+                    <p class="detail-pera">Considere estas opciones para ayudarlo/la a manejar la diarrea leve:</p> 
+                    <ul class="left-side">
+                        <li>Coma poco, comidas frecuentes y elija comidas que son fáciles de digerir como las bananas, arroz, compota de manzana y  pan tostado. Su doctor podría recomendarle una dieta en bajos residuos, que incluya alimentos bajos en fibra.</li>
+                        <li>Evite la cafeína, el alcohol, los lácteos, las grasas, las fibras, el jugo de naranja, el jugo de ciruela pasa y las comidas picantes.</li>
+                        <li>Evite las medicinas como los laxantes, los ablandadores de heces y metoclopramida (Reglan). Metoclopramida se utiliza para prevenir las náuseas y los vómitos de la quimioterapia, pero pueden conllevar a heces blandas a veces.</li>
+                        <li>¡Manténgase hidratado! Beba 8 o 10 onzas de líquidos por día.</li>
+                        <ul class="left-side">
+                            <li>Beba líquidos lentamente a lo largo de todo el día.</li>
+                            <li>Trate de agregar líquidos fluidos que tengan alto contenido en sodio ("salados") o en potasio para ayudar a su cuerpo a retener los líquidos.</li>
+                            <li>Los líquidos cálidos o a “temperatura ambiente” pueden ser mejor que los líquidos fríos.</li>
+
+                            <li>Lea esta lista de fuentes de líquidos para probar, y algunos para evitar:</li>
+                                <div class="col-md-6 pl-pr-0">
+                                    <div class="stript-box">Beba esto:</div>
+                                    <p class="mt-mb">Agua;  Jugo de manzana;    Caldos claros o sopas;  Paletas;    Gelatina;   Cubos de hielo; Bebidas deportivas como Gatorade o Powerade;</p>
+                                </div>
+                                <div class="col-md-6 pl-pr-0">
+                                    <div class="stript-box">NO esto:</div>
+                                    <p class="mt-mb">Leche o productos lácteos; Alcohol;    Cafeína<br><br><br></p>                    
+                                </div>
+
+
+
+                        </ul>
+                    </ul>
+
+                    <p class="semibold-text pt-pb">Cómo puede ayudar su equipo de atención médica</p>
+                    <ul class="left-side">
+                        <li>Si tiene un cambio en los movimientos intestinales, hable con su equipo de atención médica para explorar las mejores formas para manejarlo. Pregunte si necesita medicinas para prevenir la diarrea como la loperamida (Imodium) o difenoxilato/atropina prescripta (Lotomil).</li>
+                        <li>Ocasionalmente, la diarrea puede ser causada por una infección, que puede ser identificada por su equipo de atención médica y tratada con antibióticos.</li> 
+                        <li>Si la diarrea se ocasionó debido al mal funcionamiento del páncreas (que ocurre en algunos pacientes con cáncer de páncreas), podría ayudar reemplazar las enzimas pancreáticas.</li> 
+                        <li>Si la diarrea es severa, su equipo de atención medica puede proporcionarle líquidos por vía intravenosa (IV). También pueden revisar su horario o dosis de quimioterapia.</li> 
+                    </ul>
+      
+                    <p class="detail-pera">Para obtener más información sobre la diarrea, haga clic en los siguientes enlaces:</p>
+                    <ul class="left-side">
+                    <li><a (click)="logWebsite('https://www.cancer.net/es/asimilación-con-cáncer/efectos-f%C3%ADsicos-emocionales-y-sociales-del-cáncer/manejo-de-los-efectos-secundarios-f%C3%ADsicos/diarrea')" href="https://www.cancer.net/es/asimilación-con-cáncer/efectos-f%C3%ADsicos-emocionales-y-sociales-del-cáncer/manejo-de-los-efectos-secundarios-f%C3%ADsicos/diarrea" target="_blank">Acceda a Cancer.Net para más información sobre la diarrea</a></li>
+                    <li><a (click)="logWebsite('https://survivorship.cancer.gov/springboard/symptoms/diarrhea')" href="https://survivorship.cancer.gov/springboard/symptoms/diarrhea" target="_blank">Acceda a Springboard Beyond Cancer para más información sobre la diarrea</a></li>
+                    </ul>
+                    <img src="assets/img/Diarrhea_B.jpg" class="mt-20" width="100%" />
+                                           
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail border-top">
+                    <p class="semibold-text">Todos los síntomas</p> 
+                    <ul class="right-side-list">
+                        <li><a href="#/symptom-library-pain">Dolor</a></li>
+                        <li><a href="#/symptom-library-fatigue">Fatiga</a></li>
+                        <li><a href="#/symptom-library-depression">Tristeza</a></li>
+                        <li><a href="#/symptom-library-anxiety">Ansiedad</a></li> 
+                        <li><a href="#/symptom-library-insomnia">Insomnio</a></li>
+                        <li><a href="#/symptom-library-physicalfunction">Función física</a></li>
+                        <li><a href="#/symptom-library-nausea">Náuseas y vómitos</a></li>
+                        <li><a href="#/symptom-library-sexlife">Cambios en su vida sexual</a></li>
+                        <li><a href="#/symptom-library-breath">Falta de aire</a></li>
+                        <li><a href="#/symptom-library-constipation">Estreñimiento</a></li>
+                        <li class="active"><a href="#/symptom-library-diarrhea">Diarrea</a></li>
+                        <li><a href="#/symptom-library-neuropathy">Neuropatía periférica</a></li>
+                        <li><a href="#/symptom-library-lymphedema">Linfedema</a></li>                        
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

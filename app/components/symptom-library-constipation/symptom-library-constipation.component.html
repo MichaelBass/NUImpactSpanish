@@ -1,0 +1,77 @@
+<div id="content-detail" class="content-d">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a [routerLink]="'/dashboard'">Tablero</a></li>
+              <li class="breadcrumb-item"><a [routerLink]="'/symptom-library'">Biblioteca de síntomas</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Estreñimiento</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail"> 
+                    <h2>Estreñimiento</h2>
+                    <div class="foods-btn">
+                    <a class="foods-btn" (click)= "logPDF('symptom-library-constipation.pdf')" href="assets/pdf/symptom-library-constipation.pdf" target='_blank'>Descargar pdf <i class="icon-pdf"></i> </a> 
+                    </div>
+                    <span>Escuche el audio completo de esta página a continuación</span>
+                    <img src="assets/img/stript.png" class="d-none" width="100%" />
+                     <img src="assets/img/stript-mob.png" class="mob-none" width="100%" />
+                    <br> <br>
+                    <p class="detail-pera">Los tratamientos contra el cáncer a veces pueden causar estreñimiento. El estreñimiento es cuando la defecación es menos frecuente y las heces son duras, secas y difíciles de evacuar. Puede tener defecaciones dolorosas y que se sienta hinchado o con náuseas. El estreñimiento también suele causar hemorragias en el tejido blando por donde pasan las heces (el recto).</p>
+                    <p class="detail-pera">Entre las causas comunes del estreñimiento se pueden incluir las siguientes:</p>
+                    <ul class="left-side">
+                        <li>Quimioterapia</li>
+                        <li>Medicamentos, en especial los que se usan para controlar el dolor, las náuseas o la depresión</li> 
+                        <li>Falta de hidratación</li>
+                        <li>Estrés emocional</li> 
+                        <li>Una dieta baja en fibra</li>
+                        <li>Falta de ejercicio</li> 
+                        <li>Falta de respuesta a la necesidad de defecar</li>
+                    </ul><br>
+                    <p class="semibold-text pt-pb">Estrategias de autocuidado</p>
+                    <ul class="left-side">
+                        <li>Beba al menos 8 vasos de agua u otros líquidos al día. A muchas personas les ayuda beber líquidos calientes o tibios (como café y té) o jugo de fruta (como jugo de ciruelas pasas) para el estreñimiento.</li> 
+                        <li>Coma alimentos con alto contenido de fibra. Algunas buenas fuentes de fibra son el pan y los cereales integrales, los frijoles y guisantes secos, las verduras crudas, las frutas frescas y secas, los frutos secos, las semillas y las palomitas de maíz. Nota: si tiene un intestino estrecho, su médico puede recomendarle una dieta baja en fibra o residuos. En este caso, consulte con su equipo de atención médica si es adecuado que coma fibra.</li>
+                        <li>Limite los alimentos y suplementos que puedan provocar estreñimiento. Estos incluyen los productos lácteos, el plátano, los suplementos de calcio y las píldoras de hierro.</li>
+                        <li>Limite las bebidas carbonatadas o gaseosas.</li>
+                        <li>Si es posible, aumente la actividad física.</li>
+                        <li>Lleve un registro de las defecaciones y muéstreselo a su equipo de atención médica para que pueda hablar sobre lo que es normal para usted.</li>
+                        <li>Avise a su equipo de atención médica si no ha tenido una defecación en 2 días.</li>
+                        <li>Es posible que los métodos anteriores no funcionen bien cuando el estreñimiento es provocado por medicamentos para el dolor. Antes de empezar a tomar estos medicamentos, consulte con su equipo de atención médica sobre las formas de prevenir o controlar el estreñimiento.</li>
+                    </ul>
+                    <br>    
+                    <p class="semibold-text pt-pb">Cómo puede ayudar su equipo de atención médica</p>
+                    <p class="detail-pera">Si las estrategias de autocuidado no resultan efectivas, pregúntele a su equipo de atención médica si los laxantes, enemas o supositorios son adecuados para usted y cuándo es apropiado usarlos.</p>
+                    <p>Para aprender más sobre el estreñimiento haga clic en los siguientes enlaces:</p>
+                    <ul class="left-side">
+                        <li><a (click)="logWebsite('https://www.cancer.net/es/asimilación-con-cáncer/efectos-f%C3%ADsicos-emocionales-y-sociales-del-cáncer/manejo-de-los-efectos-secundarios-f%C3%ADsicos/estreñimiento')" href="https://www.cancer.net/es/asimilación-con-cáncer/efectos-f%C3%ADsicos-emocionales-y-sociales-del-cáncer/manejo-de-los-efectos-secundarios-f%C3%ADsicos/estreñimiento" target="_blank">Acceda a Cancer.net para obtener más información</a></li>
+                        <li><a (click)="logWebsite('https://survivorship.cancer.gov/springboard/symptoms/constipation')" href="https://survivorship.cancer.gov/springboard/symptoms/constipation" target="_blank">Acceda a Springboard Beyond Cancer para obtener más información</a></li>
+                    </ul>
+                    <img src="assets/img/Constipation_B.jpg" class="mt-20" width="100%" />
+
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail border-top">
+                    <p class="semibold-text">Todos los síntomas</p> 
+                    <ul class="right-side-list">
+                        <li><a href="#/symptom-library-pain">Dolor</a></li>
+                        <li><a href="#/symptom-library-fatigue">Fatiga</a></li>
+                        <li><a href="#/symptom-library-depression">Tristeza</a></li>
+                        <li><a href="#/symptom-library-anxiety">Ansiedad</a></li> 
+                        <li><a href="#/symptom-library-insomnia">Insomnio</a></li>
+                        <li><a href="#/symptom-library-physicalfunction">Función física</a></li>
+                        <li><a href="#/symptom-library-nausea">Náuseas y vómitos</a></li>
+                        <li><a href="#/symptom-library-sexlife">Cambios en su vida sexual</a></li>
+                        <li><a href="#/symptom-library-breath">Falta de aire</a></li>
+                        <li class="active"><a href="#/symptom-library-constipation">Estreñimiento</a></li>
+                        <li><a href="#/symptom-library-diarrhea">Diarrea</a></li>
+                        <li><a href="#/symptom-library-neuropathy">Neuropatía periférica</a></li>
+                        <li><a href="#/symptom-library-lymphedema">Linfedema</a></li>                       
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

@@ -1,0 +1,57 @@
+<div id="healthy-foods" class="">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Tablero</a></li>
+            <li class="breadcrumb-item d-none"><a href="#">...</a></li>
+            <li class="breadcrumb-item mob-hidden"><a href="#/patient-resources">Recursos para pacientes</a></li>
+            <li class="breadcrumb-item"><a href="#/patient-resources/diet-nutrition">Diet & Nutrition</a></li>
+            <li class="breadcrumb-item active mob-hidden" aria-current="page">Cómo controlar el aumento de peso</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail pt-0">
+                    <div class="foods-btn">
+                        <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Agregar a favoritos' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
+                        <a (click)= "logPDF('weight-gain.pdf')" href="assets/pdf/weight-gain.pdf" target='_blank'>Descargar pdf <i class="icon-pdf"></i> </a>
+                    </div>
+                    <h2>Cómo controlar el aumento de peso</h2>
+                    <span>Escuche el audio completo de esta página a continuación</span>
+                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
+                    <br><br>
+                    <p class="detail-pera">Debido a ciertos medicamentos para el cáncer y la quimioterapia, muchos pacientes con cáncer experimentan aumento de peso. A continuación, se presentan consejos para lidiar con el aumento de peso.</p>
+                    <ul class="left-side">
+                        <li>Informe a su médico sobre cualquier aumento de peso y hable con su equipo de atención médica para aclarar cualquier inquietud relacionada con el peso. Ellos pueden guiar sus esfuerzos para que mantenga su músculo, mientras pierde grasa corporal.</li>
+                        <li>Anote lo que come y las calorías de los alimentos. De esta manera, puede ver su consumo actual de calorías. Para perder peso, disminuya estas calorías en aproximadamente 500 por día.</li>
+                        <li>Coma principalmente alimentos de origen vegetal, como verduras, frutas, granos integrales y frijoles. Estos alimentos tienen un gran valor nutricional y pocas calorías y grasas.</li>
+                        <li>Trate de elegir bebidas sin calorías como agua, a menos que su médico o dietista le haya aconsejado lo contrario.</li>
+                        <li>Asegúrese de que el tamaño de las porciones sea el adecuado. Si su nivel de actividad ha disminuido, intente comer porciones más pequeñas para ver si su hambre se satisface con menos comida.</li>
+                        <li>Intente controlar la fatiga, la depresión, el estrés y el aburrimiento con actividades que no impliquen comer. Duerma o descanse en vez de comer si está cansado.</li>
+                    </ul>
+                    <p class="detail-pera">No se recomienda el uso de suplementos nutricionales para la pérdida de peso debido a la posible interacción con el tratamiento y los medicamentos. Consulte a su médico acerca de cualquier suplemento que esté tomando o que tenga pensado tomar.</p>
+                    <img src="assets/img/ManagingWeightGain_B.jpg"  class="mt-20" width="100%">                 
+                       
+                </div>   
+            </div> 
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail pb-0 border-top">
+                    <p class="semibold-text light-height">All Diet & Nutrition Resources</p> 
+                    <ul class="right-side-list mt-20">
+                        <!--
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/balanced-diet'">Maintaining a Balanced Diet</a></li>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/healthy-eating'">Importance of Healthy Eating</a></li>
+                        -->
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/healthy-foods'">Alimentos saludables</a></li>
+                        <li class="active" ><a [routerLink]="'/patient-resources/diet-nutrition/weight-gain'">Cómo controlar el aumento de peso</a></li> 
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/weight-loss'">Cómo manejar la pérdida de peso</a></li>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/loss-of-appetite'">Cómo manejar la falta de apetito</a></li>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/nutrition-tips'">Consejos de nutrición</a></li>
+                        <br><br>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition'"> < REGRESAR A PATIENT RESOURCES </a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

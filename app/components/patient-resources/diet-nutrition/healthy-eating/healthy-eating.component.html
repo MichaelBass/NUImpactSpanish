@@ -1,0 +1,57 @@
+<div id="healthy-foods" class="">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Tablero</a></li>
+            <li class="breadcrumb-item d-none"><a href="#">...</a></li>
+            <li class="breadcrumb-item mob-hidden"><a href="#/patient-resources">Recursos para pacientes</a></li>
+            <li class="breadcrumb-item"><a href="#/patient-resources/diet-nutrition">Diet & Nutrition</a></li>
+            <li class="breadcrumb-item active mob-hidden" aria-current="page">Importance of Healthy Eating</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail pt-0">
+                    <div class="foods-btn">
+                        <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Agregar a favoritos' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
+                        <a (click)= "logPDF('healthy-eating.pdf')" href="assets/pdf/healthy-eating.pdf" target='_blank'>Descargar pdf <i class="icon-pdf"></i> </a>
+                    </div>
+                    <h2>Importance of Healthy Eating</h2>
+                    <span>Escuche el audio completo de esta página a continuación</span>
+                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
+                    <br><br>
+                    <p class="detail-pera pt-pb">Much research has been done to determine the effect of diet on health.
+                        Overall, here are some main benefits of healthy eating for patients like you.</p>
+                    <p class="semibold-text">Benefits are:</p>
+                    <ul class="left-side font-14 mt-20">
+                        <li>Reduce the risk of a second cancer diagnosis.</li>
+                        <li>Reduce your weight, which will also protect you against cancer and other health conditions
+                            such as heart disease, diabetes
+                            and stroke.</li>
+                        <li>Bring back energy from treatment and may help you to feel better throughout the day.</li>
+                        <li>You feel better in your body!</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <div class="check-detail pb-0 border-top">
+                    <p class="semibold-text light-height">All Diet & Nutrition Resources</p>
+                    <ul class="right-side-list mt-20">
+                        <!--
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/balanced-diet'">Maintaining a Balanced Diet</a></li>
+                        <li class="active" ><a [routerLink]="'/patient-resources/diet-nutrition/healthy-eating'">Importance of Healthy Eating</a></li>
+                        -->
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/healthy-foods'">Alimentos saludables</a></li>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/weight-gain'">Cómo controlar el aumento de peso</a></li> 
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/weight-loss'">Cómo manejar la pérdida de peso</a></li>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/loss-of-appetite'">Cómo manejar la falta de apetito</a></li>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/nutrition-tips'">Consejos de nutrición</a></li>
+                        <br><br>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition'"> < REGRESAR A PATIENT RESOURCES </a></li>
+                    </ul> 
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+</div>

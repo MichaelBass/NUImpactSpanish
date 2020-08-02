@@ -1,0 +1,96 @@
+<div class="container mr-150">
+	<nav aria-label="breadcrumb">
+	  <ol class="breadcrumb">
+	    <li class="breadcrumb-item"><a href="#">Tablero</a></li>
+	    <li class="breadcrumb-item active" aria-current="page">Biblioteca de síntomas</li>
+	  </ol>
+	</nav>
+	<div class="top-content pd-top-22 clearfix">
+		<div class="row">
+			<div class="col-md-3 border-right">
+			   	<h3 class="symptom-heading">Biblioteca de síntomas</h3>
+			</div>
+			<div class="border"></div>
+			<div class="col-md-8">
+				<p class="top-head-2 hidden-xs">A continuación, encontrará los síntomas que muchos pacientes con cáncer y sobrevivientes experimentan. En cada síntoma, encontrará pasos que pueden tomar usted y su equipo de atención médica para aliviar el síntoma.</p>
+			</div>
+		</div>	
+	</div>
+
+	<div class="content-grid pt-40 clearfix row">
+		<div class="col-md-3 fav-item" *ngFor="let cardsrc of card1">
+			<mat-card >
+			  <img mat-card-image [src]="cardsrc.src" alt="Photo of a Shiba Inu">
+			  <mat-card-content>
+			  	<h4 class="card-title">{{cardsrc.label}}</h4>
+			  </mat-card-content>
+			  <mat-card-content>
+				  <p class="card-details">
+				  	{{cardsrc.text}}
+				  </p>
+			   </mat-card-content> 
+			  <mat-divider></mat-divider>
+			  <mat-card-actions>
+			    <a [routerLink]="['/',cardsrc.route]" ><i class="material-icons">arrow_forward </i>Leer sobre el síntoma</a>
+			  </mat-card-actions>
+			</mat-card>
+		</div>
+	</div>
+<!--
+	<div class="content-grid pt-40 clearfix row">
+		<div class="col-md-3" *ngFor="let cardsrc of card2">
+			<mat-card >
+			  <img mat-card-image [src]="cardsrc.src" alt="Photo of a Shiba Inu">
+			  <mat-card-content>
+			  	<h4 class="card-title">{{cardsrc.label}}</h4>
+			  </mat-card-content>
+			  <mat-card-content>
+				  <p class="card-details">
+				  	{{cardsrc.text}}
+				  </p>
+			   </mat-card-content> 
+			  <mat-divider></mat-divider>
+			  <mat-card-actions>
+			    <a [routerLink]="['/',cardsrc.route]" ><i class="material-icons">arrow_forward </i>READ about symptom</a>
+			  </mat-card-actions>
+			</mat-card>
+		</div>
+	</div>
+
+	<div class="content-grid pt-40 clearfix row">
+		<div class="col-md-3" *ngFor="let cardsrc of card3">
+			<mat-card >
+			  <img mat-card-image [src]="cardsrc.src" alt="Photo of a Shiba Inu">
+			  <mat-card-content>
+			  	<h4 class="card-title">{{cardsrc.label}}</h4>
+			  </mat-card-content>
+			  <mat-card-content>
+				  <p class="card-details">
+				  	{{cardsrc.text}}
+				  </p>
+			   </mat-card-content> 
+			  <mat-divider></mat-divider>
+			  <mat-card-actions>
+			    <a [routerLink]="['/',cardsrc.route]" ><i class="material-icons">arrow_forward </i>READ about symptom</a>
+			  </mat-card-actions>
+			</mat-card>
+		</div>
+	</div>
+ --> 
+	<div class="all-symptoms bg-white">
+		<ul>
+			<p>All-symptoms</p>
+			<li><a href="#">Pain</a></li>
+			<li class="active"><a href="#">Fatigue</a></li>
+			<li><a href="#">Depression</a></li>
+			<li><a href="#">Anxiety</a></li>
+			<li><a href="#">Insomnia</a></li>
+			<li><a href="#">Physical Function</a></li>
+			<li><a href="#">Nausea</a></li>
+			<li><a href="#">Vomiting</a></li>
+			<li><a href="#">Shortness of Breath</a></li>
+			<li><a href="#">Constipation</a></li>
+			<li><a href="#">Diarrhea</a></li>
+		</ul>
+	</div>
+</div>

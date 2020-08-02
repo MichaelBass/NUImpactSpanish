@@ -1,0 +1,44 @@
+<div id="healthy-foods" class="">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Tablero</a></li>
+              <li class="breadcrumb-item d-none"><a href="#">...</a></li>
+              <li class="breadcrumb-item mob-hidden"><a href="#/patient-resources">Recursos para pacientes</a></li>
+              <li class="breadcrumb-item"><a href="#/patient-resources/treatment">Treatment Symptom Management</a></li>
+            <li class="breadcrumb-item active mob-hidden" aria-current="page">Cuidados paliativos</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail pt-0">
+                    <div class="foods-btn">
+                        <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Agregar a favoritos' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
+                        <a (click)= "logPDF('palliative.pdf')" href="assets/pdf/palliative.pdf" target='_blank'>Descargar pdf <i class="icon-pdf"></i> </a>
+                    </div>
+                    <h2>Cuidados paliativos</h2>
+                    <span>Escuche el audio completo de esta página a continuación</span>
+                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
+                    <br><br>
+                    <p class="detail-pera">El objetivo de los cuidados paliativos es proporcionar alivio del dolor y el malestar, ya sea físico, emocional o espiritual. Los cuidados paliativos tienen la intención de mejorar la calidad de vida durante el tratamiento del cáncer. Los equipos de cuidados paliativos incluyen médicos, personal de enfermería y trabajadores sociales.</p>
+                    <p class="detail-pera">Al escuchar el término cuidados paliativos, muchos asumen que son lo mismo que los cuidados para enfermos terminales. Si bien con frecuencia también se incluyen cuidados paliativos en la atención de los pacientes terminales, los cuidados paliativos comienzan en cualquier etapa para ayudar a sobrellevar el cáncer lo mejor posible. Los cuidados paliativos son oportunos desde el momento en que el paciente recibe un diagnóstico y pueden administrase junto con los tratamientos previstos para curar o controlar el cáncer (por ejemplo, los tratamientos de quimioterapia y radiación). La finalidad de los cuidados paliativos es controlar los síntomas como el dolor, la fatiga y la ansiedad, y ayudarlo a enfrentar los desafíos cotidianos.</p>  
+                    <p class="detail-pera">Puede encontrar información adicional sobre los servicios de cuidados paliativos de Northwestern Medicine <a (click)="logWebsite('https://www.nm.org/conditions-and-care-areas/palliative-medicine-and-supportive-care')" href="https://www.nm.org/conditions-and-care-areas/palliative-medicine-and-supportive-care" target="_blank">aquí</a>. Para solicitar una referencia, hable con un miembro de su equipo de atención oncológica.</p>
+                    <img src="assets/img/PalliativeCare_B.jpg" class="mt-20" width="100%" />
+                </div>   
+            </div> 
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail pb-0 border-top">
+                    <p class="semibold-text light-height">Treatment Symptom Management</p> 
+                    <ul class="right-side-list mt-20">
+                        <li><a [routerLink]="'/patient-resources/treatment/integrative'">Medicina integral</a></li>
+                        <li class="active" ><a [routerLink]="'/patient-resources/treatment/palliative'">Cuidados paliativos</a></li>
+                        <li><a [routerLink]="'/patient-resources/treatment/rehabilitation'">Servicios de rehabilitación del cáncer</a></li>
+                        <li><a [routerLink]="'/patient-resources/treatment/survivorship'">Servicios para la supervivencia del cáncer</a></li>
+                        <br><br>
+                        <li><a [routerLink]="'/patient-resources/treatment'"> < REGRESAR A Treatment Symptom Management</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

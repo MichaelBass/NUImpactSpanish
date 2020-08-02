@@ -1,0 +1,81 @@
+<div id="healthy-foods" class="">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Tablero</a></li>
+              <li class="breadcrumb-item d-none"><a href="#">...</a></li>
+              <li class="breadcrumb-item mob-hidden"><a href="#/patient-resources">Recursos para pacientes</a></li>
+              <li class="breadcrumb-item"><a href="#/patient-resources/well-being">Enhancing Well-Being</a></li>
+            <li class="breadcrumb-item active mob-hidden" aria-current="page">Dejar de fumar y el abuso de sustancias</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail pt-0">
+                    <div class="foods-btn">
+                        <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Agregar a favoritos' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
+                        <a (click)= "logPDF('smokingcessation.pdf')" href="assets/pdf/smokingcessation.pdf" target='_blank'>Descargar pdf <i class="icon-pdf"></i> </a>
+                    </div>
+                    <h2>Dejar de fumar y el abuso de sustancias</h2>
+                    <span>Escuche el audio completo de esta página a continuación</span>
+                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
+                    <br><br>
+                    <p class="detail-pera">Fumar puede afectar negativamente su salud física y mental. En las siguientes secciones, aprenderá sobre algunos de los efectos de fumar y las opciones para dejar de hacerlo.</p>
+                    <p class="semibold-text pt-pb">Los riesgos en la salud por fumar</p>
+                    <p class="detail-pera">Fumar es una de las causas principales de cáncer en Estados Unidos. Fumar también puede reducir la efectividad del tratamiento de cáncer y empeorar los efectos secundarios del tratamiento, como la fatiga, la pérdida de peso y el riesgo de infección.</p>
+                    <p class="semibold-text pt-pb">Los beneficios de dejar de fumar </p>
+                    <ul class="left-side">
+                        <li>Un tiempo de recuperación más rápido del tratamiento de cáncer.</li> 
+                        <li>Mejores resultados del tratamiento.</li>
+                        <li>Menor posibilidad de que su cáncer vuelva o de que se desarrolle un nuevo cáncer.</li>
+                        <li>El ritmo cardíaco y la presión arterial podrían volver a lo normal.</li>
+                        <li>Una calidad de vida más sana.</li>
+                        <li>Dentro de unas semanas, las personas podrían haber mejorado su circulación, producen menos flema, y no tosen o resuellan como era frecuente.</li>
+                        <li>Con varios meses de haber dejado, las personas pueden esperar mejoras significativas en el funcionamiento pulmonar.</li>
+                        <li>Dentro de unos años de haber dejado de fumar, las personas tendrán menos posibilidades de enfermedades cardíacas u otras enfermedades crónicas que si hubieran continuado fumando.</li>
+                    </ul>
+                    <p class="semibold-text pt-pb">Obtener ayuda para dejar de fumar</p>
+                    <p class="detail-pera">Puede jugar un papel activo en su tratamiento de cáncer y alcanzar un potencial completo de salud. Nunca es muy tarde para dejar de fumar, y su equipo de atención médica en Northwestern está aquí para ayudarlo/la y hasta aprender que parar o reducir el hábito de fumar puede ser un paso positivo para dejarlo.</p>
+                    <p class="detail-pera">El Lurie Cancer Center tiene un programa de cese de tabaco que ayuda a los pacientes con cáncer a dejar de fumar por medio de terapia, medicamentos y recursos vía teléfono.</p>
+                    <ul class="left-side">
+                        <li>Programe una cita con un especialista en tratamiento de tabaco a través del Lurie Cancer Center, oncología de apoyo, llamando al 312.921.7848 (312.921.QUIT). Solo las derivaciones de los pacientes de Lurie Cancer Center en la región central se aceptan en este momento. <a (click)="logWebsite('https://www.cancer.northwestern.edu/cancer-care/specialized-clinical-services/tobacco-cessation-program.html')" href="https://www.cancer.northwestern.edu/cancer-care/specialized-clinical-services/tobacco-cessation-program.html" target="_blank">programa de cese de tabaco del Lurie Cancer Center</a></li>
+                        <li>El link del centro para el control de enfermedades que se encuentra adelante brinda varios recursos de líneas telefónicas para dejar de fumar, recursos del gobierno, y otras organizaciones que ayudan a la gente a dejar de fumar. <a (click)="logWebsite('https://www.cdc.gov/tobacco/campaign/tips/quit-smoking/quitting-resources.html')" href="https://www.cdc.gov/tobacco/campaign/tips/quit-smoking/quitting-resources.html" target="_blank">recursos del centro para el control de enfermedades para ayudar a las personas a dejar de fumar</a></li>
+                    </ul>
+                    <p class="semibold-text pt-pb">Los riesgos en la salud por el uso de sustancias</p>
+                    <p class="detail-pera">Las personas con adicciones con frecuencia tienen uno o más problemas de salud asociados, que pueden incluir una enfermedad pulmonar o cardíaca, un accidente cerebrovascular, cáncer, o condiciones de salud mental.</p> 
+                    <p class="detail-pera">Algunos de los riesgos de salud son:</p> 
+                    <ul class="left-side">
+                        <li>Metanfetamina puede causar problemas dentales graves, conocidos como 'boca de metanfetamina'.</li>
+                        <li>Los opiáceos pueden conllevar a una sobredosis o a la muerte.</li>
+                        <li>Los inhalantes pueden dañar o destruir las células nerviosas, ya sea en el cerebro o en el sistema nervioso periférico (el sistema nervioso fuera del cerebro y de la médula espinal).</li>
+                        <li>El uso de drogas también puede incrementar el riesgo de contraer infecciones.</li>  
+                    </ul>
+                    <p class="detail-pera">Busca ayuda:</p>
+                    <p class="semibold-text">Línea de ayuda SAMHSA (Administración de Servicios de Abuso de Sustancias y Salud Mental): 1-800-662-4357</p>
+                    <ul class="left-side">
+                        <li>Ayudan a individuos y familias que enfrentan trastornos mentales y / o de abuso de sustancias.</li> 
+                        <li>Le brindan información sobre referencias de tratamiento, derivaciones de tratamientos, los grupos de apoyo, las organizaciones comunitarias y ¡mucho más!</li>  
+                    </ul>
+                    <img src="assets/img/SmokingCessationandSubstanceUse_B.jpg" class="mt-20" width="100%" />
+                </div>   
+            </div> 
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail pb-0 border-top">
+                    <p class="semibold-text light-height">Treatment Symptom Management</p> 
+                    <ul class="right-side-list mt-20"> 
+                        <li><a [routerLink]="'/patient-resources/well-being/talking'">Hablar con su equipo de atención médica</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/social'">Apoyo social</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/stress'">Manejo del estrés</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/physical'">Actividad física</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/problem'">Solución de problemas bajo estrés</a></li>
+                        <li class="active" ><a [routerLink]="'/patient-resources/well-being/smokingcessation'">Dejar de fumar y el abuso de sustancias</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/sunprotection'">Protección solar</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/supportive'">Oncología de apoyo y cuidados paliativos</a></li>
+                        <br><br>
+                        <li><a [routerLink]="'/patient-resources/well-being'"> < REGRESAR A Enhancing Well-Being</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

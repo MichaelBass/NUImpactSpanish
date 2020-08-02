@@ -1,0 +1,58 @@
+<div id="healthy-foods" class="">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Tablero</a></li>
+              <li class="breadcrumb-item d-none"><a href="#">...</a></li>
+              <li class="breadcrumb-item mob-hidden"><a href="#/patient-resources">Recursos para pacientes</a></li>
+              <li class="breadcrumb-item"><a href="#/patient-resources/well-being">Enhancing Well-Being</a></li>
+            <li class="breadcrumb-item active mob-hidden" aria-current="page">Apoyo social</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail pt-0">
+                    <div class="foods-btn">
+                        <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Agregar a favoritos' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
+                        <a (click)= "logPDF('social.pdf')" href="assets/pdf/social.pdf" target='_blank'>Descargar pdf <i class="icon-pdf"></i> </a>
+                    </div>
+                    <h2>Apoyo social</h2>
+                    <span>Escuche el audio completo de esta página a continuación</span>
+                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
+                    <br><br>
+                    <p class="detail-pera">Vivir con cáncer puede ser estresante. No siempre es fácil expresar sus sentimientos y pedir ayuda, pero hacerlo puede aliviar la tensión y aumentar el bienestar. Estas son algunas sugerencias para que sea más fácil pedir ayuda.</p>
+                    <ul class="left-side">
+                        <li>La familia, los amigos y los compañeros de trabajo quieren ayudar, pero muchas veces no saben cómo hacerlo. Sea específico al pedir ayuda. Algunas personas disfrutan de brindar ayuda práctica, como proporcionar comidas y traslados, mientras que otros son buenos escuchando.</li>
+                        <li>La mayoría de sus amigos y familiares estarán dispuestos a hablar sobre el cáncer y su impacto en sus vidas, pero para algunos puede ser más difícil tratar el tema. No crea que su silencio implica indiferencia.</li> 
+                        <li>Si no se siente preparado para pedir ayuda a sus allegados, también puede buscar apoyo fuera de su familia y amigos. Los grupos de apoyo locales, por ejemplo, pueden ser un lugar seguro para expresar los sentimientos difíciles y hablar con otras personas que estén viviendo una experiencia similar.</li>
+                    </ul> 
+                    <p class="bold-text pt-pb">Mantener los vínculos y fortalecerlos</p>                    
+                    <p>Make time to be with family/friends, as it's a good way to reduce stress. Below are a few ideas for spending more time together.</p>
+                     <ul class="left-side">
+                        <li>Noche de familia o amigos. Dedique una noche a la semana a pasar tiempo con sus seres queridos.</li> 
+                        <li>Cocinen, hagan ejercicio o lean juntos.</li>  
+                        <li>Aprendan algo nuevo. Busquen un nuevo pasatiempo o actividad para hacer juntos, como visitar los museos de Chicago o tomar una clase de yoga gratis.</li> 
+                    </ul>
+                    <img src="assets/img/SocialSupport_B.jpg" class="mt-20" width="100%" />
+                </div>   
+            </div> 
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail pb-0 border-top">
+                    <p class="semibold-text light-height">Treatment Symptom Management</p> 
+                    <ul class="right-side-list mt-20">
+                        <li><a [routerLink]="'/patient-resources/well-being/talking'">Hablar con su equipo de atención médica</a></li>
+                        <li class="active" ><a [routerLink]="'/patient-resources/well-being/social'">Apoyo social</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/stress'">Manejo del estrés</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/physical'">Actividad física</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/problem'">Solución de problemas bajo estrés</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/smokingcessation'">Dejar de fumar y el abuso de sustancias</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/sunprotection'">Protección solar</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/supportive'">Oncología de apoyo y cuidados paliativos</a></li>
+                        <br><br>
+                        <li><a [routerLink]="'/patient-resources/well-being'"> < REGRESAR A Enhancing Well-Being</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

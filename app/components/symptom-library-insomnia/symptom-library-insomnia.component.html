@@ -1,0 +1,82 @@
+<div id="content-detail" class="content-d">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a [routerLink]="'/dashboard'">Tablero</a></li>
+              <li class="breadcrumb-item"><a [routerLink]="'/symptom-library'">Biblioteca de síntomas</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Insomnio</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail"> 
+                    <h2>Insomnio</h2>
+                    <div class="foods-btn">
+                    <a class="foods-btn" (click)= "logPDF('symptom-library-insomnia.pdf')" href="assets/pdf/symptom-library-insomnia.pdf" target='_blank'>Descargar pdf <i class="icon-pdf"></i> </a> 
+                    </div>
+                    <span>Escuche el audio completo de esta página a continuación</span>
+                    <img src="assets/img/stript.png" class="d-none" width="100%" />
+                     <img src="assets/img/stript-mob.png" class="mob-none" width="100%" />
+                    <br> <br>
+                    <p class="detail-pera">Dormir bien es importante para su cuerpo y mente. Descansar bien durante la noche puede ayudarlo a pensar con claridad, reducir la presión arterial, aumentar el apetito y fortalecer el sistema inmunológico.</p>
+                    <p class="detail-pera">El insomnio es un trastorno del sueño común que puede dificultar el sueño, impedir el sueño continuo o hacer que uno se despierte demasiado pronto y no pueda volver a dormirse.</p>
+                    <p class="detail-pera">El insomnio es habitual entre los pacientes con cáncer y los supervivientes, pero afortunadamente, hay muchas formas de mejorar el sueño.</p>
+                    <p class="semibold-text pt-pb">Las causas comunes del insomnio pueden incluir lo siguiente:</p>
+                    <ul class="left-side">
+                        <li>Cambios físicos provocados por el cáncer o una cirugía.</li>
+                        <li>Efectos secundarios de medicamentos u otros tratamientos.</li>
+                        <li>Estrés.</li> 
+                        <li>Problemas de salud no relacionados con el cáncer.</li>
+                    </ul>
+                    <p class="semibold-text pt-pb">Estrategias de autocuidado</p>
+                    <p class="detail-pera">A continuación, se incluye una lista de estrategias que puede tratar en el hogar para mejorar el sueño:</p>
+                    <ul class="left-side">
+                        <li>Acuéstese y despiértese a la misma hora todos los días, incluso los fines de semana. Su cuerpo se acostumbrará a la rutina.</li>
+                        <li>Duerma en una habitación oscura, silenciosa y alejada de distracciones como mascotas y ronquidos.</li>
+                        <li>Use la habitación para dormir y para tener relaciones sexuales. Todas las demás actividades (leer, ver televisión, comer, hablar, usar una computadora o un teléfono inteligente, etc.) deben hacerse en otra habitación.</li>
+                        <li>Cree una rutina de relajación a la hora de acostarse, como darse un baño, beber una taza de té de hierbas o escuchar música relajante. Tener la misma rutina de relajación cada noche ayudará a su cuerpo a relajarse antes de dormir.</li>
+                        <li>Trate de no mirar el reloj para ver la hora cuando tenga problemas para dormirse al comienzo de la noche o cuando se despierte durante la noche.</li>
+                        <li>Aumente la actividad física durante el día.</li>
+                        <li>Las siestas pueden hacer que sea más difícil conciliar el sueño por la noche. Si realmente necesita una siesta, trate de que sea corta (menos de 30 minutos).</li>
+                        <li>Evite las comidas picantes y pesadas, la cafeína y el alcohol antes de acostarse.</li>
+                        <li>Tome melatonina, un medicamento de venta libre que puede ayudarlo a dormir mejor por la noche.</li>
+                        <li>Relájese. Permita que su <a href='https://www.cancer.gov/espanol/cancer/sobrellevar/sentimientos/relajarse' target="_blank">cuerpo y mente se relajen</a> entre 20 y 30 minutos cada día. La relajación ayuda al cuerpo y a la mente a reaccionar ante el estrés. También puede ayudarlo a dormirse con mayor facilidad. La meditación es una forma útil de relajación y puede mejorar su nivel de estrés.</li>
+                    </ul>
+                    <p class="semibold-text pt-pb">Cómo puede ayudar su equipo de atención médica</p> 
+                    <p class="detail-pera">Si tiene problemas para dormir, hable con su médico. Es posible que le receten medicamentos o que le recomienden un tipo de terapia para mejorar el sueño.</p>
+                    <p class="semibold-text pt-pb">A continuación, se incluyen algunas estrategias que su médico puede recomendarle:</p>
+                    <ul class="left-side">
+                        <li>Terapia cognitivo-conductual para el insomnio o TCC-I. Como parte de la TCC-I, se le puede pedir que visite a un psicólogo u otro proveedor capacitado para aprender habilidades específicas para ayudarlo a dormir mejor. Estudios demuestran que la TCC-I es muy efectiva para ayudar a las personas a mejorar el sueño.</li> 
+                        <li>Su médico podría recomendarle un medicamento recetado para que pueda dormir mejor. Los medicamentos para el sueño se pueden usar por un período corto. Asegúrese de usar solo los medicamentos para dormir recetados o recomendados por su médico.</li> 
+                    </ul>                       
+                    <p class="detail-pera">Para obtener más información sobre el insomnio, haga clic en los siguientes enlaces:</p>
+                    <ul class="left-side">
+                        <li><a (click)="logWebsite('https://www.cancer.net/es/asimilación-con-cáncer/efectos-f%C3%ADsicos-emocionales-y-sociales-del-cáncer/manejo-de-los-efectos-secundarios-f%C3%ADsicos/problemas-para-dormir-insomnio')" href="https://www.cancer.net/es/asimilación-con-cáncer/efectos-f%C3%ADsicos-emocionales-y-sociales-del-cáncer/manejo-de-los-efectos-secundarios-f%C3%ADsicos/problemas-para-dormir-insomnio" target="_blank">Acceda a Cancer.net para obtener más información</a></li>
+                        <li><a (click)="logWebsite('https://survivorship.cancer.gov/springboard/symptoms/sleep-problems')" href="https://survivorship.cancer.gov/springboard/symptoms/sleep-problems" target="_blank">Acceda a Springboard Beyond Cancer para obtener más información</a></li>
+                    </ul>
+                    <img src="assets/img/Insomnia_B.jpg" class="mt-20" width="100%" />
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail border-top">
+                    <p class="semibold-text">Todos los síntomas</p> 
+                    <ul class="right-side-list">
+                        <li><a href="#/symptom-library-pain">Dolor</a></li>
+                        <li><a href="#/symptom-library-fatigue">Fatiga</a></li>
+                        <li><a href="#/symptom-library-depression">Tristeza</a></li>
+                        <li><a href="#/symptom-library-anxiety">Ansiedad</a></li> 
+                        <li class="active"><a href="#/symptom-library-insomnia">Insomnio</a></li>
+                        <li><a href="#/symptom-library-physicalfunction">Función física</a></li>
+                        <li><a href="#/symptom-library-nausea">Náuseas y vómitos</a></li>
+                        <li><a href="#/symptom-library-sexlife">Cambios en su vida sexual</a></li>
+                        <li><a href="#/symptom-library-breath">Falta de aire</a></li>
+                        <li><a href="#/symptom-library-constipation">Estreñimiento</a></li>
+                        <li><a href="#/symptom-library-diarrhea">Diarrea</a></li>
+                        <li><a href="#/symptom-library-neuropathy">Neuropatía periférica</a></li>
+                        <li><a href="#/symptom-library-lymphedema">Linfedema</a></li>                       
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

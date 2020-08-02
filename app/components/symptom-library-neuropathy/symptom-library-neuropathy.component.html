@@ -1,0 +1,91 @@
+<div id="content-detail" class="content-d">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a [routerLink]="'/dashboard'">Tablero</a></li>
+              <li class="breadcrumb-item"><a [routerLink]="'/symptom-library'">Biblioteca de síntomas</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Neuropatía periférica</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail"> 
+                    <h2>Neuropatía periférica</h2>
+                    <div class="foods-btn">
+                    <a class="foods-btn" (click)= "logPDF('symptom-library-neuropathy.pdf')" href="assets/pdf/symptom-library-neuropathy.pdf" target='_blank'>Descargar pdf <i class="icon-pdf"></i> </a> 
+                    </div>
+                    <span>Escuche el audio completo de esta página a continuación</span>
+                    <img src="assets/img/stript.png" class="d-none" width="100%" />
+                     <img src="assets/img/stript-mob.png" class="mob-none" width="100%" />
+                    <br> <br>
+                    <p class="detail-pera">Algunas personas con cáncer sienten hormigueo, entumecimiento, debilidad y/o problemas de equilibrio y coordinación. Estas sensaciones, que a menudo afectan los dedos de las manos, las manos, los dedos y las plantas de los pies, pueden ser signos de una afección denominada neuropatía periférica. La neuropatía periférica ocurre por daños en los nervios y puede ser un efecto secundario de algunas quimioterapias o incluso de la radiación.</p>
+                    <p class="detail-pera">Si tiene cáncer y presenta signos de neuropatía periférica por primera vez, es posible que se deba al cáncer o a su tratamiento.</p>
+                    <p class="detail-pera">La neuropatía periférica suele comenzar durante el tratamiento y, en algunas personas, puede persistir hasta después del tratamiento.</p>
+                    <p class="detail-pera">Algunos pacientes describen la neuropatía periférica como la sensación de que los pies o las manos se adormecen. Debido a esto, algunos pacientes pueden tener dificultades al manipular objetos pequeños, preparar comidas, realizar tareas domésticas, caminar y subir escaleras. Como puede ser difícil sentir dónde están los pies, algunos pacientes con neuropatía periférica tienen un mayor riesgo de caídas.</p>
+                    <p class="detail-pera">Si bien no existe un tratamiento específico para la neuropatía periférica, muchos pacientes logran aliviar sus síntomas mediante diversos tratamientos y estrategias de autocuidado. Es conveniente analizar estas estrategias con el equipo de tratamiento, ya que el mejor enfoque puede depender de lo que causó la neuropatía, los nervios involucrados y las partes afectadas del cuerpo.</p>
+
+                    <p class="semibold-text pt-pb">Estrategias de autocuidado</p><br>
+                    <ul class="left-side">
+                        <li>Evite exponer las zonas afectadas al calor o frío extremos.</li>
+                        <li>Pruebe con plantillas, almohadillas de gel o soportes para el arco si siente dolor al caminar.</li>
+                        <li>Ponga los artículos necesarios al alcance de su mano cuando esté en la cama.</li>
+                        <li>Limite o evite el consumo de alcohol.</li>
+                        <li>Considere terapias como la fisioterapia y la terapia ocupacional, masajes, acupuntura y ejercicios de relajación.</li>
+                        <li>Tome medidas para evitar las lesiones en las zonas afectadas:</li>
+                            <ul class="left-side">
+                            <li>Tenga mucho cuidado al usar objetos filosos o peligrosos como cuchillos, cortaúñas, y herramientas de jardinería o al hacer reparaciones en el hogar.</li>
+                            <li>No camine por la casa o por el exterior descalzo. Use zapatos o zapatillas bien ajustados en todo momento cuando esté fuera de la cama.</li>
+                            <li>Cúbrase la piel antes de entrar en lugares fríos o antes de tocar objetos fríos.</li>
+                            <li>Antes de bañarse, pruebe el agua en una zona del cuerpo no afectada por la neuropatía (como el codo) para asegurarse de que no esté demasiado caliente.</li> 
+                            <li>Revísese la piel con regularidad para ver si hay cortes, ampollas o llagas. Aunque le duelan los pies, es posible que no sienta una uña encarnada o una infección. Considere consultar a un podólogo para controlarse los pies de forma frecuente.</li> 
+                            <li>Use agarraderas para cocinar y guantes para hacer jardinería.</li>
+                            </ul> 
+                        <li>Tenga más cuidado si tiene problemas de fuerza o equilibrio:</li>
+                            <ul class="left-side">
+                            <li>Use zapatos con suela de goma.</li> 
+                            <li>Quite los tapetes.</li>
+                            <li>Use los pasamanos de las escaleras.</li> 
+                            <li>Coloque una alfombra antideslizante en la bañera o ducha.</li> 
+                            <li>Use una barra de apoyo en la ducha.</li> 
+                            <li>Coloque una lámpara en el pasillo para poder ir al baño durante la noche.</li>
+                            </ul>
+                    </ul>
+                    <br>    
+                    <p class="semibold-text pt-pb">Cómo puede ayudar su equipo de atención médica</p><br>
+                    <p class="detail-pera">Su equipo de tratamiento puede ayudarlo con estrategias adicionales para aliviar los síntomas de la neuropatía periférica, que incluyen:</p>
+                    <ul class="left-side">
+                        <li>Medicamentos para aliviar el dolor.</li>
+                        <li>Fisioterapia y terapia ocupacional para ayudar con el dolor, la falta de sensibilidad de la piel, el equilibrio, la coordinación, la fuerza y la seguridad.</li>
+                        <li>Adaptación de la dieta para incluir nutrientes específicos que puedan ayudar con los problemas relacionados con los nervios (por ejemplo, vitaminas B1, B6 o B12).</li>
+                    </ul>
+                    <p class="detail-pera">Para aprender más sobre la neuropatía periférica haga clic en los siguientes enlaces:</p>
+                    <ul class="left-side">
+                        <li><a (click)="logWebsite('https://www.cancer.net/es/desplazarse-por-atención-del-cáncer/efectos-secundarios/neuropat%C3%ADa-periférica')" href="https://www.cancer.net/es/desplazarse-por-atención-del-cáncer/efectos-secundarios/neuropat%C3%ADa-periférica" target="_blank">Acceda a Cancer.net para obtener más información</a></li>
+                        <li><a (click)="logWebsite('https://survivorship.cancer.gov/springboard/symptoms/tingling-burning-numbness')" href="https://survivorship.cancer.gov/springboard/symptoms/tingling-burning-numbness" target="_blank">Acceda a Springboard Beyond Cancer para obtener más información</a></li>
+                        </ul>
+                    <img src="assets/img/Neuropathy_B.jpg" class="mt-20" width="100%" />
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail border-top">
+                    <p class="semibold-text">Todos los síntomas</p> 
+                    <ul class="right-side-list">
+                        <li><a href="#/symptom-library-pain">Dolor</a></li>
+                        <li><a href="#/symptom-library-fatigue">Fatiga</a></li>
+                        <li><a href="#/symptom-library-depression">Tristeza</a></li>
+                        <li><a href="#/symptom-library-anxiety">Ansiedad</a></li> 
+                        <li><a href="#/symptom-library-insomnia">Insomnio</a></li>
+                        <li><a href="#/symptom-library-physicalfunction">Función física</a></li>
+                        <li><a href="#/symptom-library-nausea">Náuseas y vómitos</a></li>
+                        <li><a href="#/symptom-library-sexlife">Cambios en su vida sexual</a></li>
+                        <li><a href="#/symptom-library-breath">Falta de aire</a></li>
+                        <li><a href="#/symptom-library-constipation">Estreñimiento</a></li>
+                        <li><a href="#/symptom-library-diarrhea">Diarrea</a></li>
+                        <li class="active"><a href="#/symptom-library-neuropathy">Neuropatía periférica</a></li>
+                        <li><a href="#/symptom-library-lymphedema">Linfedema</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

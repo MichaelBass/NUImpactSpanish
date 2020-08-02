@@ -1,0 +1,53 @@
+<div id="healthy-foods" class="">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Tablero</a></li>
+              <li class="breadcrumb-item d-none"><a href="#">...</a></li>
+              <li class="breadcrumb-item mob-hidden"><a href="#/patient-resources">Recursos para pacientes</a></li>
+              <li class="breadcrumb-item"><a href="#/patient-resources/treatment">Treatment Symptom Management</a></li>
+            <li class="breadcrumb-item active mob-hidden" aria-current="page">Medicina integral</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail pt-0">
+                    <div class="foods-btn">
+                        <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Agregar a favoritos' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
+                        <a (click)= "logPDF('integrative.pdf')" href="assets/pdf/integrative.pdf" target='_blank'>Descargar pdf <i class="icon-pdf"></i> </a>
+                    </div>
+                    <h2>Medicina integral</h2>
+                    <span>Escuche el audio completo de esta página a continuación</span>
+                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
+                    <br><br>
+                    <p class="detail-pera">La medicina integral combina terapias complementarias, como la acupuntura y el masaje, con terapias convencionales para tratar el cáncer, que ayudan a controlar los efectos secundarios y a mejorar el bienestar.</p>
+                    <p class="detail-pera">Muchos pacientes diagnosticados con cáncer tratan terapias complementarias para cuidar su salud durante y después del tratamiento del cáncer. Si bien muchas terapias integrales pueden ser de gran ayuda, también existe el riesgo potencial de que ocurran interacciones con el tratamiento del cáncer y efectos adversos. Con el fin de garantizar los mejores resultados sin correr ningún riesgo, es importante informar al equipo de atención médica sobre las terapias complementarias utilizadas. Si tú o tu equipo tienen preguntas sobre las opciones que podrían ser más útiles, una consulta con un médico especializado en medicina integral puede ayudarte a alcanzar tus objetivos.</p>
+                    <p class="detail-pera">Northwestern Medicine Osher Center for Integrative Medicine ofrece una gran variedad de terapias complementarias e integrales para involucrar la mente, el cuerpo, el espíritu y la comunidad con un especial interés en las opciones personalizadas.</p>
+                    <p class="detail-pera">Los servicios disponibles en Northwestern Medicine Osher Center for Integrative Medicine incluyen:</p>
+                    <ul class="left-side">
+                        <li>Consultas de medicina integral para desarrollar un plan de bienestar que puede incluir nutrición, suplementos nutricionales, y enfoques complementarios según el plan de tratamiento del cáncer.</li>
+                        <li>Tratamientos como masajes, terapias craneosacrales, y drenaje linfático manual.</li>
+                        <li>Medicina china tradicional y acupuntura.</li>
+                        <li>Terapias energéticas como reiki y toque terapéutico.</li>
+                        <li>Terapias mente-cuerpo, como relajación, biorretroalimentación, ensoñación dirigida y terapia cognitivo-conductual con expertos en psicología de la salud.</li>
+                    </ul>                    
+                    <p class="detail-pera">Para obtener más detalles, <a (click)="logWebsite('https://ocim.nm.org/?utm_source=nim-nm-org&utm_medium=301re&utm_campaign=integrativemedicine')" href="https://ocim.nm.org/?utm_source=nim-nm-org&utm_medium=301re&utm_campaign=integrativemedicine" target="_blank">haz clic aquí</a>.</p>
+                    <img src="assets/img/IntegrativeCare_B.jpg" class="mt-20" width="100%" />
+                </div>   
+            </div> 
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail pb-0 border-top">
+                    <p class="semibold-text light-height">Treatment Symptom Management</p> 
+                    <ul class="right-side-list mt-20">
+                        <li class="active" ><a [routerLink]="'/patient-resources/treatment/integrative'">Medicina integral</a></li>
+                        <li><a [routerLink]="'/patient-resources/treatment/palliative'">Cuidados paliativos</a></li>
+                        <li><a [routerLink]="'/patient-resources/treatment/rehabilitation'">Servicios de rehabilitación del cáncer</a></li>
+                        <li><a [routerLink]="'/patient-resources/treatment/survivorship'">Servicios para la supervivencia del cáncer</a></li>
+                        <br><br>
+                        <li><a [routerLink]="'/patient-resources/treatment'"> < REGRESAR A Treatment Symptom Management</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

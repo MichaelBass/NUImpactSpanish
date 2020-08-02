@@ -1,0 +1,80 @@
+<div id="healthy-foods" class="">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Tablero</a></li>
+            <li class="breadcrumb-item d-none"><a href="#">...</a></li>
+            <li class="breadcrumb-item mob-hidden"><a href="#/patient-resources">Recursos para pacientes</a></li>
+            <li class="breadcrumb-item"><a href="#/patient-resources/diet-nutrition">Diet & Nutrition</a></li>
+            <li class="breadcrumb-item active mob-hidden" aria-current="page">Alimentos saludables</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail pt-0">
+                    <div class="foods-btn">
+                        <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Agregar a favoritos' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
+                        <a (click)= "logPDF('healthy-foods.pdf')" href="assets/pdf/healthy-foods.pdf" target='_blank'>Descargar pdf <i class="icon-pdf"></i> </a>
+                    </div>
+                    <h2>Alimentos saludables</h2>
+                    <span>Escuche el audio completo de esta página a continuación</span>
+                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
+                    <br><br>
+                    <p class="detail-pera">La siguiente lista incluye alimentos saludables que debe tratar de incorporar en su dieta. Consulte con su médico antes de hacer cualquier cambio con su dieta.</p>
+                    <p class="bold-text pt-pb">Frutas y verduras</p><br>
+                    <p class="detail-pera">Las frutas y verduras:</p>
+                    <ul class="left-side">
+                        <li>tienen pocas calorías;</li>
+                        <li>son ricas en fibra (te llenan) y</li>
+                        <li>pueden ayudar a prevenir ciertos tipos de cáncer.</li>
+                    </ul>
+                    <p class="detail-pera">Debemos ingerir una variedad de frutas y verduras para lograr el equilibrio nutricional que nuestro cuerpo necesita. La siguiente es una lista de distintas frutas y verduras que puede añadir a sus comidas o comerlas como aperitivo.</p>
+                    <ul class="left-side">
+                        <li>Verde: acelga, espinaca, brócoli, arvejas, kiwi.</li>
+                        <li>Amarillo/naranja:  zanahoria, batata, pimiento amarillo, calabaza, plátano, naranja, limón.</li>
+                        <li>Rojo:  repollo colorado, remolacha, cebolla roja, frijoles rojos, rábanos, arándanos, frambuesas, fresas.</li>
+                        <li>Azul/morado:  berenjena, arándanos, moras, uvas, ciruelas.</li>
+                        <li>Blanco:  ajo, cebolla, puerro, cebolla verde, cebollín.</li>
+                    </ul>
+                    <p class="detail-pera">Los expertos recomiendan consumir entre 2 y 6,5 tazas de frutas y verduras al día, según las necesidades energéticas de cada persona. Esto incluye entre 1 y 2,5 tazas de frutas y entre 1 y 4 tazas de verduras, sobre todo de verduras y legumbres de color verde oscuro y naranja.</p>
+                    <p class="semibold-text pt-pb">Granos integrales</p>
+                    <p>La capa externa de un grano tiene un alto contenido de fibra, vitaminas y minerales. Los productos a base de granos integrales conservan esta capa, al contrario de otros granos procesados.</p>
+                    <p class="detail-pera">Si elige productos integrales, asegúrese de que en la etiqueta se lea la palabra "grano integral". Si la tabla de ingredientes de un pan de trigo solo dice "trigo" y no "trigo integral", no es un producto de grano integral.<br><br>Hay muchos otros granos, por ejemplo:</p>
+                    <ul class="left-side">
+                        <li>Avena: se digiere fácilmente y aporta vitaminas B. La harina y el salvado de avena son excelentes para reducir el colesterol.</li>
+                        <li>Quinua: alimento de alta calidad proteica y con un alto contenido de hierro.</li>
+                        <li>Arroz: siempre que puedas, elige arroz integral o salvaje en vez de arroz blanco enriquecido.</li>
+                        <li>Trigo: el pan y la pasta de trigo integral se pueden conseguir fácilmente. El bulgur es un tipo de trigo triturado. Si bien solo es una parte del grano entero, el germen de trigo es una excelente fuente de vitamina E.</li>
+                    </ul> 
+                    <p class="semibold-text  pt-pb">Legumbres</p>
+                    <p class="detail-pera">Las legumbres son una gran fuente de proteínas y fibra. Constituyen una amplia categoría de alimentos que incluye:</p>
+                    <ul class="left-side">
+                        <li>Frijoles (habichuelas rojas, frijoles rojos)</li>
+                        <li>Lentejas</li>
+                        <li>Arvejas partidas</li>
+                        <li>Garbanzos, etc.</li> 
+                    </ul> 
+                    <img src="assets/img/foods.jpg"  class="mt-20" width="100%" />   
+                </div>   
+            </div> 
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail pb-0 border-top">
+                    <p class="semibold-text light-height">All Diet & Nutrition Resources</p> 
+                    <ul class="right-side-list mt-20">
+                        <!--
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/balanced-diet'">Maintaining a Balanced Diet</a></li>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/healthy-eating'">Importance of Healthy Eating</a></li>
+                        -->
+                        <li class="active" ><a [routerLink]="'/patient-resources/diet-nutrition/healthy-foods'">Alimentos saludables</a></li>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/weight-gain'">Cómo controlar el aumento de peso</a></li> 
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/weight-loss'">Cómo manejar la pérdida de peso</a></li>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/loss-of-appetite'">Cómo manejar la falta de apetito</a></li>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/nutrition-tips'">Consejos de nutrición</a></li>
+                        <br><br>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition'"> < REGRESAR A PATIENT RESOURCES </a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

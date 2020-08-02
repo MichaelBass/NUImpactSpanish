@@ -1,0 +1,137 @@
+<div id="content-detail" class="content-d">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a [routerLink]="'/dashboard'">Tablero</a></li>
+              <li class="breadcrumb-item"><a [routerLink]="'/symptom-library'">Biblioteca de síntomas</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Dolor</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail"> 
+                    <h2>Dolor</h2>
+                    <div class="foods-btn">
+                    <a class="foods-btn" (click)= "logPDF('symptom-library-pain.pdf')" href="assets/pdf/symptom-library-pain.pdf" target='_blank'>Descargar pdf <i class="icon-pdf"></i> </a> 
+                    </div>
+                    <span>Escuche el audio completo de esta página a continuación</span>
+                    <img src="assets/img/stript.png" class="d-none" width="100%" />
+                     <img src="assets/img/stript-mob.png" class="mob-none" width="100%" />
+                    <br> <br>
+                    <p class="detail-pera">Muchos pacientes y sobrevivientes sienten dolor durante y después del tratamiento del cáncer. Puede ser provocado por el cáncer o por los tratamientos contra el cáncer. El dolor, y los pensamientos y emociones que lo acompañan pueden tener un impacto en la calidad de vida. Puede ser útil saber que el dolor relacionado con el cáncer puede controlarse con éxito en la mayoría de los pacientes.</p>
+                    
+                    <p class="semibold-text pt-pb">Estrategias de autocuidado</p>
+                    <p class="detail-pera">Hay muchas maneras de controlar y tratar el dolor que produce el cáncer, como los medicamentos no opioides y los métodos no farmacológicos. Algunas estrategias pueden ser mejores que otras y lo que da resultado para un paciente puede no funcionar para otro. A continuación, se incluyen ejemplos de medicamentos no opioides y métodos no farmacológicos:</p>
+                    
+                    <p class="detail-pera">Medicamentos para el dolor de venta libre</p>
+                    <ul class="left-side">
+                        <li>Estos medicamentos se suelen usar para el dolor leve o en combinación con opioides para el dolor moderado. Consulte siempre con su equipo de atención del cáncer antes de tomar cualquier medicamento de venta libre.</li>  
+                        <li>Nombres de medicamentos comunes: acetaminofén (Tylenol), ibuprofeno (Advil), naproxeno (Aleve) y aspirina.</li>
+                    </ul>
+                    <p class="detail-pera">Intervenciones para la mente y el cuerpo</p>
+                    <ul class="left-side">
+                        <li>Distraerse y concentrarse puede reducir el dolor al desviar la atención y al enfocarla en otras cosas. 
+                        Por ejemplo, puede leer, mirar televisión, hacer manualidades, escuchar música, resolver crucigramas o hacer otras actividades agradables o significativas.</li>
+                        <li>La relajación y las imágenes agradables pueden ayudar a relajar los músculos y reenfocar la atención. La terapia de salud mental puede ayudar a aliviar la angustia emocional relacionada con el dolor.</li>
+                        <li>Asista a grupos de apoyo locales y hable con otras personas sobre sus experiencias para controlar el dolor.</li>
+                        <li>La meditación puede ayudar con el dolor, las preocupaciones, el estrés e incluso los cambios de humor.</li> 
+                        <li>Consulte a su médico sobre la acupuntura o la biorretroalimentación.</li> 
+                        <li>Los masajes usados apropiadamente pueden ayudar</li>
+                    </ul>
+                    <p class="detail-pera">Apoyo y postura</p>
+                    <ul class="left-side">
+                        <li>Mantenga una postura correcta para minimizar las molestias.</li>
+                        <li>Use elementos de apoyo (almohadas, taburetes para los pies o apoyabrazos) para mantener una postura correcta y cómoda.</li>
+                        <li>Muévase con frecuencia para facilitar la circulación y evitar las úlceras por presión.</li>
+                    </ul>
+                    <p class="detail-pera">Actividad física</p>
+                    <ul class="left-side">
+                        <li>Es posible que no sea conveniente para ciertas afecciones. Si no está seguro de poder hacer ejercicio, consulte a su médico.</li>
+                        <li>Fortalecer o tonificar los músculos ayuda a mantener la flexibilidad, la coordinación, el equilibrio y la circulación.</li>
+                        <li>Ajuste el ejercicio a su capacidad actual; empiece despacio y responda a los límites de su cuerpo.</li>
+                        <li>Consulte a su médico si es conveniente que lo refiera a un fisioterapeuta.</li> 
+                    </ul>
+                    <p class="detail-pera">Aplicación de calor/frío</p>
+                    <ul class="left-side">
+                        <li>El calor ayuda con los músculos tensos o irritados.</li>
+                        <li>Aplique una fuente de calor cubierta durante períodos limitados (entre 20 y 30 minutos).</li>
+                        <li>Evite el calor en las áreas de piel sensible o agrietada y en su lugar aplique frío.</li>
+                        <li>Aplique compresas frías cubiertas en las zonas dolorosas durante períodos limitados (20 minutos).</li>
+                        <li>Evite el calor o el frío en las zonas con problemas de circulación o entumecimiento, o en las zonas que recibieron radiación previamente.</li> 
+                        <li>Controle el área de impacto con frecuencia para detectar cualquier irritación de la piel.</li>
+                    </ul>
+
+                    <p class="semibold-text pt-pb">Cómo puede ayudar su equipo de atención médica </p><br>
+                    <ul class="left-side">
+                        <li>Hable con su médico sobre su dolor. Explique dónde siente dolor, cuándo comenzó, cuánto dura, qué siente, qué lo hace mejorar y cómo afecta su vida.</li> 
+                        <li>Los medicamentos son importantes en el tratamiento del dolor provocado por el cáncer. Es posible que su médico le recete medicamentos para aliviar el dolor.</li>  
+                        <li>Si los analgésicos recetados no funcionan como se espera, comuníqueselo a su médico.</li> 
+                        <li>Tome los medicamentos para el dolor siguiendo las indicaciones de la receta.</li> 
+                        <li>Puede tener efectos secundarios o no. Sin embargo, es importante que le diga a su médico o al personal de enfermería si experimenta algún efecto secundario de los analgésicos.</li>  
+                        <li>Si su medicamento para el dolor no funciona, pídale a su médico que lo refiera a un especialista en dolor o cuidados paliativos.</li> 
+                    </ul>
+                    <p class="detail-pera">A continuación se incluyen algunos tipos de medicamentos comunes.</p>
+                    <p class="detail-pera">Opiáceos</p>
+                    <ul class="left-side">
+                        <li>Medicamentos que suelen recetarse para el dolor moderado a severo.</li>  
+                        <li>Nombres de medicamentos comunes: codeína, hidrocodona, Vicodin, oxicodona, OxyContin, MSContin, morfina, hidromorfona, levorfanol, parche de fentanilo y otros.</li>
+                    </ul>                    
+                    <p class="detail-pera">Antidepresivos</p>
+                    <ul class="left-side">
+                        <li>Pueden ayudar a aliviar el dolor de los nervios (dolor agudo y punzante o dolor ardiente continuo en el mismo lugar, pero generalmente en la superficie del cuerpo o cerca de ella), por ejemplo, el dolor causado por el herpes.</li>
+                        <li>Los medicamentos que suelen recetarse incluyen: Elavil, Pamelor, Norpramin y Cymbalta.</li>  
+                    </ul>                    
+                    <p class="detail-pera">Anticonvulsivos</p>
+                    <ul class="left-side">
+                        <li>Pueden aliviar el dolor de los nervios.</li>
+                        <li>Los medicamentos que suelen recetarse incluyen: Neurontin, Tegretol y Klonopin, entre otros.</li> 
+                    </ul>                    
+                    <p class="detail-pera">Corticosteroides</p>
+                    <ul class="left-side">
+                        <li>Disminuyen la hinchazón (inflamación) del dolor provocado por el cáncer. También se usan en combinación con otros medicamentos para controlar y prevenir las náuseas de la quimioterapia. Los esteroides se pueden emplear durante períodos cortos, pero no son convenientes a largo plazo debido a los efectos secundarios.</li>
+                        <li>Algunos de los medicamentos más habituales son la dexametasona (Decadron) y la prednisona.</li>
+                    </ul>                    
+                    <p class="detail-pera">Bifosfonatos</p>
+                    <ul class="left-side">
+                        <li>Son eficaces para el dolor de huesos.</li>
+                        <li>Los medicamentos que suelen recetarse incluyen: pamidronato (Aredia) y ácido zoledrónico (Zometa).</li>
+                    </ul>                    
+                    <p class="detail-pera">Otros tratamientos</p>
+                    <ul class="left-side">
+                        <li>La radioterapia puede ayudar a aliviar el dolor de huesos.</li>
+                        <li>La ablación por radiofrecuencia puede proporcionar alivio para los dolores de huesos. Se trata de un procedimiento en el que se utiliza una corriente eléctrica de ondas de radio para calentar los tejidos nerviosos y reducir las señales de dolor.</li>
+                        <li>La cirugía puede aliviar el dolor provocado por la obstrucción o la compresión.</li>
+                        <li>Los bloqueos nerviosos o las inyecciones de anestesia local en los nervios o cerca de ellos pueden ayudar a algunas personas a controlar el dolor de forma temporal.</li>
+                    </ul>                    
+                    <p class="detail-pera">Para conocer más sobre el dolor haga clic en los siguientes enlaces:</p>
+                    <ul class="left-side">
+                        <li><a (click)="logWebsite('https://www.cancer.net/es/asimilación-con-cáncer/efectos-f%C3%ADsicos-emocionales-y-sociales-del-cáncer/manejo-de-los-efectos-secundarios-f%C3%ADsicos/dolor')" href="https://www.cancer.net/es/asimilación-con-cáncer/efectos-f%C3%ADsicos-emocionales-y-sociales-del-cáncer/manejo-de-los-efectos-secundarios-f%C3%ADsicos/dolor" target="_blank">Acceda a Cancer.net para obtener más detalles</a></li>
+                        <li><a (click)="logWebsite('https://survivorship.cancer.gov/springboard/symptoms/pain')" href="https://survivorship.cancer.gov/springboard/symptoms/pain" target="_blank">Acceda a Springboard Beyond Cancer para obtener más detalles</a></li>
+                    </ul>
+                    <img src="assets/img/Pain_B.jpg"  class="mt-20" width="100%" />
+                    <br>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail border-top">
+                    <p class="semibold-text">Todos los síntomas</p> 
+                    <ul class="right-side-list">
+                        <li class="active"><a href="#/symptom-library-pain">Dolor</a></li>
+                        <li><a href="#/symptom-library-fatigue">Fatiga</a></li>
+                        <li><a href="#/symptom-library-depression">Tristeza</a></li>
+                        <li><a href="#/symptom-library-anxiety">Ansiedad</a></li> 
+                        <li><a href="#/symptom-library-insomnia">Insomnio</a></li>
+                        <li><a href="#/symptom-library-physicalfunction">Función física</a></li>
+                        <li><a href="#/symptom-library-nausea">Náuseas y vómitos</a></li>
+                        <li><a href="#/symptom-library-sexlife">Cambios en su vida sexual</a></li>
+                        <li><a href="#/symptom-library-breath">Falta de aire</a></li>
+                        <li><a href="#/symptom-library-constipation">Estreñimiento</a></li>
+                        <li><a href="#/symptom-library-diarrhea">Diarrea</a></li>
+                        <li><a href="#/symptom-library-neuropathy">Neuropatía periférica</a></li>
+                        <li><a href="#/symptom-library-lymphedema">Linfedema</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

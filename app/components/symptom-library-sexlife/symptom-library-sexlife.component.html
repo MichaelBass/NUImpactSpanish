@@ -1,0 +1,81 @@
+<div id="content-detail" class="content-d">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a [routerLink]="'/dashboard'">Tablero</a></li>
+              <li class="breadcrumb-item"><a [routerLink]="'/symptom-library'">Biblioteca de síntomas</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Cambios en su vida sexual</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail"> 
+                    <h2>Cambios en su vida sexual</h2>
+                    <div class="foods-btn">
+                    <a class="foods-btn" (click)= "logPDF('symptom-library-sexlife.pdf')" href="assets/pdf/symptom-library-sexlife.pdf" target='_blank'>Descargar pdf <i class="icon-pdf"></i> </a> 
+                    </div>
+                    <span>Escuche el audio completo de esta página a continuación</span>
+                    <img src="assets/img/stript.png" class="d-none" width="100%" />
+                     <img src="assets/img/stript-mob.png" class="mob-none" width="100%" />
+                    <br> <br>
+                    <p class="detail-pera">Es común tener problemas en las relaciones sexuales debido al cáncer y su tratamiento. Estos problemas pueden deberse a cambios en el cuerpo, efectos secundarios del tratamiento o problemas emocionales. A veces estos cambios son temporales y se dan solo durante el tratamiento. Los cambios comunes que pueden afectar su vida sexual durante y después del cáncer incluyen los siguientes:</p>
+                    <ul class="left-side">
+                        <li>Problemas de erección</li>
+                        <li>Sequedad vaginal y otros síntomas menopáusicos</li>
+                        <li>Debilidad muscular</li>
+                        <li>Cambios en el aspecto físico</li> 
+                        <li>Menos interés en la actividad sexual</li>  
+                    </ul><br>
+                    <p class="detail-pera">Hacer frente a estos cambios puede ser un desafío. Sin embargo, con el tiempo, la mayoría de los pacientes con cáncer aprenden a adaptarse y seguir adelante. Si bien puede resultar incómodo hablar de estos problemas con su equipo de atención médica, es importante buscar ayuda para aprender a adaptarse a estos cambios.</p><br>
+
+                    <p class="semibold-text pt-pb">Estrategias de autocuidado</p><br>
+                    <ul class="left-side">
+                        <li>Pregunte a su médico o a otro miembro de su equipo de atención médica sobre cualquier restricción o precaución relacionada con la actividad sexual mientras se recupera de una cirugía o recibe otros tratamientos para el cáncer, como la quimioterapia o la radioterapia.</li>
+                        <li>Hable con su equipo de atención médica sobre los cambios a corto o largo plazo en su vida sexual que debe anticipar según el tipo de cáncer que tenga o el tratamiento que reciba.</li> 
+                        <li>Reconozca que la recuperación física del cáncer y su tratamiento pueden llevar tiempo. Hasta que eso suceda, usted y su cónyuge o pareja pueden encontrar nuevas formas de demostrarse afecto el uno al otro, como tocarse, abrazarse y acariciarse.</li>
+                        <li>Intente ser consciente de sus pensamientos, ya que pueden influir en su vida sexual. Siéntase orgulloso de su cuerpo y reconozca todo lo que ha superado a lo largo de su experiencia con el cáncer. Concéntrese en lo positivo y piense en cosas sobre usted que lo hagan sentir seguro y atractivo.</li>
+                        <li>Hable con su cónyuge o pareja sobre sus sentimientos. Dígale a su pareja si quiere tener relaciones sexuales o si prefiere que se abracen, besen y acaricien. Es posible que a su pareja le preocupe tener relaciones con usted, que crea que le hará daño o que piense que no se siente bien. Hable con su pareja sobre cualquier inquietud en relación con su vida sexual. Intente no ocultar sus sentimientos y manténgase positivo para evitar la culpa.</li>
+                    </ul>
+                    <br>    
+                    <p class="semibold-text pt-pb">Cómo puede ayudar su equipo de atención médica</p><br>
+                    <ul class="left-side">
+
+                        <li>Hable con un miembro de su equipo de atención médica sobre cualquier problema específico que experimente (por ejemplo, problemas de erección, sequedad vaginal o debilidad muscular). Pueden sugerir algunas opciones quirúrgicas (por ejemplo, la reconstrucción mamaria o los implantes para el cáncer de mama y de próstata). También pueden recomendarle medicamentos, productos de venta libre (por ejemplo, lubricantes) o ejercicios que puedan ayudarle.</li>
+                        <li>Su equipo de atención médica puede referirlo a un programa especial o a un especialista para obtener asesoramiento sobre cuestiones relacionadas con la vida sexual durante y después del tratamiento. Estos programas y especialistas pueden incluir:</li>
+                        <ul class="left-side">
+                            <li>Clínicas de medicina o salud sexual (incluyendo, <a (click)="logWebsite('https://sexmedmenopause.nm.org')" href='https://sexmedmenopause.nm.org' target='_blank'>Northwestern Medicine Center for Sexual Medicine & Menopause</a>)</li>
+                            <li>Otro tipo de asesoramiento, como una consulta con un psicólogo o trabajador social</li>
+                            <li>Otros especialistas médicos (por ejemplo, un ginecólogo)</li>
+                        </ul>
+                    </ul>
+                    <p class="detail-pera">Para aprender más sobre los cambios en la vida sexual haga clic en los siguientes enlaces:</p>
+                    <ul class="left-side">
+                        <li>Ingrese a Cancer.net para obtener más detalles sobre cómo el cáncer puede afectar su vida sexual (información para hombres <a (click)="logWebsite('https://www.cancer.net/es/desplazarse-por-atención-del-cáncer/citas-sexo-y-reproducción/la-salud-sexual-y-el-tratamiento-del-cáncer-hombres')" href="https://www.cancer.net/es/desplazarse-por-atención-del-cáncer/citas-sexo-y-reproducción/la-salud-sexual-y-el-tratamiento-del-cáncer-hombres" target="_blank">disponible en</a> información para mujeres <a (click)="logWebsite('https://www.cancer.net/es/desplazarse-por-atención-del-cáncer/citas-sexo-y-reproducción/sexualidad-y-tratamiento-contra-el-cáncer-mujeres')" href="https://www.cancer.net/es/desplazarse-por-atención-del-cáncer/citas-sexo-y-reproducción/sexualidad-y-tratamiento-contra-el-cáncer-mujeres" target="_blank">disponible en</a></li>
+                        <li>Ingrese al sitio web de Springboard Beyond Cancer para obtener más detalles sobre cómo el cáncer puede afectar su vida sexual (información para hombres <a (click)="logWebsite('https://survivorship.cancer.gov/springboard/symptoms/sexual-problems-for-men')" href="https://survivorship.cancer.gov/springboard/symptoms/sexual-problems-for-men" target="_blank">disponible en</a> información para mujeres <a (click)="logWebsite('https://survivorship.cancer.gov/springboard/symptoms/sexual-problems-for-women')" href="https://survivorship.cancer.gov/springboard/symptoms/sexual-problems-for-women" target="_blank">disponible en</a></li>
+                    </ul>
+                    <img src="assets/img/ChangesinYourSexLife_B.jpg" class="mt-20" width="100%" />
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail border-top">
+                    <p class="semibold-text">Todos los síntomas</p> 
+                    <ul class="right-side-list">
+                        <li><a href="#/symptom-library-pain">Dolor</a></li>
+                        <li><a href="#/symptom-library-fatigue">Fatiga</a></li>
+                        <li><a href="#/symptom-library-depression">Tristeza</a></li>
+                        <li><a href="#/symptom-library-anxiety">Ansiedad</a></li> 
+                        <li><a href="#/symptom-library-insomnia">Insomnio</a></li>
+                        <li><a href="#/symptom-library-physicalfunction">Función física</a></li>
+                        <li><a href="#/symptom-library-nausea">Náuseas y vómitos</a></li>
+                        <li class="active"><a href="#/symptom-library-sexlife">Cambios en su vida sexual</a></li>
+                        <li><a href="#/symptom-library-breath">Falta de aire</a></li>
+                        <li><a href="#/symptom-library-constipation">Estreñimiento</a></li>
+                        <li><a href="#/symptom-library-diarrhea">Diarrea</a></li>
+                        <li><a href="#/symptom-library-neuropathy">Neuropatía periférica</a></li>
+                        <li><a href="#/symptom-library-lymphedema">Linfedema</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

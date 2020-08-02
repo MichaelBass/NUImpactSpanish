@@ -1,0 +1,62 @@
+<div id="healthy-foods" class="">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Tablero</a></li>
+            <li class="breadcrumb-item d-none"><a href="#">...</a></li>
+            <li class="breadcrumb-item mob-hidden"><a href="#/patient-resources">Recursos para pacientes</a></li>
+            <li class="breadcrumb-item"><a href="#/patient-resources/diet-nutrition">Diet & Nutrition</a></li>
+            <li class="breadcrumb-item active mob-hidden" aria-current="page">Cómo manejar la pérdida de peso</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail pt-0">
+                    <div class="foods-btn">
+                        <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Agregar a favoritos' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
+                        <a (click)= "logPDF('weight-loss.pdf')" href="assets/pdf/weight-loss.pdf" target='_blank'>Descargar pdf <i class="icon-pdf"></i> </a>
+                    </div>
+                    <h2>Cómo manejar la pérdida de peso</h2>
+                    <span>Escuche el audio completo de esta página a continuación</span>
+                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
+                    <br><br>
+                    <p class="detail-pera">El objetivo para controlar la pérdida de peso es aumentar el consumo de calorías con alimentos ricos en nutrientes para volver a ganar peso de forma progresiva.</p>
+                    <p class="semibold-text pt-pb">Estos son algunos ejemplos de los tipos de alimentos que puede comer para aumentar de peso:</p>
+                    <ul class="left-side">
+                        <li>Frutas secas (pasas, albaricoques, arándanos).</li>
+                        <li>Nueces, semillas y mantequillas de nuez</li>
+                        <li>Fruta sumergida en mantequilla de maní(cacahuate)</li>
+                        <li>Galletas integrales con queso.</li>
+                        <li>Aceites saludables (como de oliva o canola) para freír o saltear alimentos en vez de hacerlos al vapor o al horno sin grasa.</li>
+                    </ul>
+                    
+                    <p class="bold-text pt-pb">Otros consejos para aumentar de peso</p>
+                    <ul class="left-side">
+                        <li>Comer varias comidas pequeñas durante el día.</li> 
+                        <li>Tomar bebidas entre las comidas en lugar de hacerlo durante las comidas. Esto puede dejar más espacio para alimentos altos en calorías en las comidas</li>
+                        <li>Añadir entrenamiento de fuerza a tu rutina ayuda a comer más.  Esto ayudará a que recuperes la masa muscular.</li>
+                    </ul>
+                    <img src="assets/img/ManagingWeightLoss_B.jpg"  class="mt-20" width="100%"> 
+                </div>   
+            </div> 
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail pb-0 border-top">
+                    <p class="semibold-text light-height">All Diet & Nutrition Resources</p> 
+                    <ul class="right-side-list mt-20">
+                        <!--
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/balanced-diet'">Maintaining a Balanced Diet</a></li>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/healthy-eating'">Importance of Healthy Eating</a></li>
+                        -->
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/healthy-foods'">Alimentos saludables</a></li>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/weight-gain'">Cómo controlar el aumento de peso</a></li> 
+                        <li class="active" ><a [routerLink]="'/patient-resources/diet-nutrition/weight-loss'">Cómo manejar la pérdida de peso</a></li>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/loss-of-appetite'">Cómo manejar la falta de apetito</a></li>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/nutrition-tips'">Consejos de nutrición</a></li>
+                        <br><br>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition'"> < REGRESAR A PATIENT RESOURCES </a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

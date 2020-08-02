@@ -1,0 +1,80 @@
+<div id="healthy-foods" class="">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Tablero</a></li>
+            <li class="breadcrumb-item d-none"><a href="#">...</a></li>
+            <li class="breadcrumb-item mob-hidden"><a href="#/patient-resources">Recursos para pacientes</a></li>
+            <li class="breadcrumb-item"><a href="#/patient-resources/diet-nutrition">Diet & Nutrition</a></li>
+            <li class="breadcrumb-item active mob-hidden" aria-current="page">Consejos de nutrición</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail pt-0">
+                    <div class="foods-btn">
+                        <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Agregar a favoritos' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
+                        <a (click)= "logPDF('nutrition-tips.pdf')" href="assets/pdf/nutrition-tips.pdf" target='_blank'>Descargar pdf <i class="icon-pdf"></i> </a>
+                    </div>
+                    <h2>Consejos de nutrición</h2>
+                    <span>Escuche el audio completo de esta página a continuación</span>
+                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
+                    <br><br>
+                    <p class="detail-pera">En esta sección, aprenderá sobre otros consejos que puede aplicar en su vida para llevar una dieta saludable.</p>
+                    <p class="detail-pera">Consejos de nutrición:</p>
+                    <p class="bold-text pt-pb">Busque opciones para no freír</p>
+                    <ul class="left-side">
+                        <li>Intente hornear, asar o hervir en vez de freír las carnes o verduras.</li>
+                        <li>Use hierbas frescas, especias, limón o vinagre para sazonar las carnes y verduras.</li>
+                        <li>Use aceite vegetal como aceite de oliva o canola.</li> 
+                    </ul>
+                    <p class="bold-text pt-pb">Prepara salsas saludables</p>
+                    <ul class="left-side">
+                        <li>Limite la cantidad de aceite y, si es necesario, no uses más de 1 o 2 cucharaditas de aceite de oliva.</li>
+                        <li>Prepare las salsas a base de crema con leche baja en grasa o crema sin grasa.</li>
+                        <li>Use salsas a base de tomate y condiméntelas con hierbas frescas, chile, pimientos verdes, ajo o cilantro en vez de aceite.</li> 
+                    </ul>
+                    <p class="bold-text pt-pb">Reduce el consumo de grasa</p>
+                    <ul class="left-side">
+                        <li>Elimine la grasa de la carne antes de prepararla (ternera, cordero o cerdo).</li>
+                        <li>Elija cortes más magros.</li>
+                        <li>Refrigere las sopas o los estofados después de cocinarlos y con una cuchara retire la grasa dura que queda encima después de unas horas.</li>
+                        <li>Cambie la leche entera por leche libre de grasa o baja en grasa.</li>
+                        <li>Evite los aperitivos salados, ya que suelen tener un contenido más alto de grasa.</li>
+                    </ul>
+                    <p class="bold-text pt-pb">Comer vegetales con cada comida</p>
+                    <ul class="left-side">
+                        <li>Intente combinar verduras con almidón y hortalizas de raíz como la yuca, calabaza, zapallo, batata y zanahoria, alimentos que son una excelente fuente de fibra y carbohidratos complejos.</li>
+                        <li>Evite hervir las verduras durante un período prolongado para no quitarles los nutrientes.</li>
+                    </ul>
+                    <p class="bold-text pt-pb">No olvide controlar las porciones</p>
+                    <ul class="left-side">
+                        <li>Controle las porciones y trate de comer la mitad de una porción abundante. Una porción de carne del tamaño de la palma de la mano es suficiente y puede saciarse con verduras a la parrilla.</li> 
+                        <li>Sirva los platos en la cocina en vez de poner todos los alimentos en la mesa.</li>
+                        <li>Pida a quien quiere repetir que se sirva su propia ración.</li>
+                    </ul>
+                    <img src="assets/img/Nutrition Tips_B.jpg" class="mt-20" width="100%">                 
+                       
+                </div>   
+            </div> 
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail pb-0 border-top">
+                    <p class="semibold-text light-height">All Diet & Nutrition Resources</p> 
+                    <ul class="right-side-list mt-20">
+                        <!--    
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/balanced-diet'">Maintaining a Balanced Diet</a></li>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/healthy-eating'">Importance of Healthy Eating</a></li>
+                        -->
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/healthy-foods'">Alimentos saludables</a></li>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/weight-gain'">Cómo controlar el aumento de peso</a></li> 
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/weight-loss'">Cómo manejar la pérdida de peso</a></li>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/loss-of-appetite'">Cómo manejar la falta de apetito</a></li>
+                        <li class="active" ><a [routerLink]="'/patient-resources/diet-nutrition/nutrition-tips'">Consejos de nutrición</a></li>
+                        <br><br>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition'"> < REGRESAR A PATIENT RESOURCES </a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+<div id="healthy-foods" class="">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Tablero</a></li>
+              <li class="breadcrumb-item d-none"><a href="#">...</a></li>
+              <li class="breadcrumb-item mob-hidden"><a href="#/patient-resources">Recursos para pacientes</a></li>
+              <li class="breadcrumb-item"><a href="#/patient-resources/treatment">Treatment Symptom Management</a></li>
+            <li class="breadcrumb-item active mob-hidden" aria-current="page">Servicios de rehabilitación del cáncer</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail pt-0">
+                    <div class="foods-btn">
+                        <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Agregar a favoritos' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
+                        <a (click)= "logPDF('rehabilitation.pdf')" href="assets/pdf/rehabilitation.pdf" target='_blank'>Descargar pdf <i class="icon-pdf"></i> </a>
+                    </div>
+                    <h2>Servicios de rehabilitación del cáncer</h2>
+                    <span>Escuche el audio completo de esta página a continuación</span>
+                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
+                    <br><br>
+                    <p class="detail-pera">Los servicios de rehabilitación del cáncer pueden ser beneficiosos antes, durante y después del tratamiento del cáncer. Estos servicios pueden ayudarlo si se siente débil, con dolor y fatiga, experimenta linfedema o tiene dificultad para realizar sus actividades cotidianas, recreativas y laborales.</p>
+                    <p class="detail-pera">Los fisioterapeutas, los terapeutas ocupacionales y los terapeutas del habla y del lenguaje pueden trabajar para mejorar la fuerza y el condicionamiento, el cuidado personal, pasarse la comida, y la comunicación. Northwestern  Medical System ofrece servicios de rehabilitación del cáncer en los siguientes lugares:</p>  
+                    <ul class="left-side">
+                        <li><a (click)="logWebsite('https://www.nm.org/conditions-and-care-areas/rehabilitation-services')" href='https://www.nm.org/conditions-and-care-areas/rehabilitation-services' target='_blank'>NMH, servicios de rehabilitación</a></li>
+                        <li><a (click)="logWebsite('https://www.nm.org/conditions-and-care-areas/womens-health/obgyn/pelvic-health/pelvic-floor-physical-therapy-program')" href='https://www.nm.org/conditions-and-care-areas/womens-health/obgyn/pelvic-health/pelvic-floor-physical-therapy-program' target='_blank'>NMG obstetricia y ginecología, Programa de fisioterapia pélvica</a></li>
+                        <li><a (click)="logWebsite('https://www.nm.org/conditions-and-care-areas/employee-and-occupational-health/physical-therapy')" href='https://www.nm.org/conditions-and-care-areas/employee-and-occupational-health/physical-therapy' target='_blank'>NMG, ortopedia física y terapia ocupacional</a></li>
+                        <li><a (click)="logWebsite('https://marianjoy.org/index.aspx')" href='https://marianjoy.org/index.aspx' target='_blank'>Marianjoy, servicios ambulatorios y hospitalarios</a></li>
+                    </ul> 
+                    <p class="detail-pera">También se ofrecen servicios de rehabilitación del cáncer en <a (click)="logWebsite('https://www.sralab.org')" href='https://www.sralab.org' target='_blank'>Shirley Ryan AbilityLab</a>.</p>
+                    <img src="assets/img/CancerRehabilitationServices_B.jpg" class="mt-20" width="100%" />
+                </div>   
+            </div> 
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail pb-0 border-top">
+                    <p class="semibold-text light-height">Treatment Symptom Management</p> 
+                    <ul class="right-side-list mt-20"> 
+                        <li><a [routerLink]="'/patient-resources/treatment/integrative'">Medicina integral</a></li>
+                        <li><a [routerLink]="'/patient-resources/treatment/palliative'">Cuidados paliativos</a></li>
+                        <li class="active" ><a [routerLink]="'/patient-resources/treatment/rehabilitation'">Servicios de rehabilitación del cáncer</a></li>
+                        <li><a [routerLink]="'/patient-resources/treatment/survivorship'">Servicios para la supervivencia del cáncer</a></li>
+                        <br><br>
+                        <li><a [routerLink]="'/patient-resources/treatment'"> < REGRESAR A Treatment Symptom Management</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

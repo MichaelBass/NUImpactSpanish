@@ -1,0 +1,48 @@
+<div id="healthy-foods" class="">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Tablero</a></li>
+              <li class="breadcrumb-item d-none"><a href="#">...</a></li>
+              <li class="breadcrumb-item mob-hidden"><a href="#/patient-resources">Recursos para pacientes</a></li>
+              <li class="breadcrumb-item"><a href="#/patient-resources/financial">Financial & Practical Matters</a></li>
+            <li class="breadcrumb-item active mob-hidden" aria-current="page">Cuestiones legales y laborales</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail pt-0">
+                    <div class="foods-btn">
+                        <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Agregar a favoritos' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
+                        <a (click)= "logPDF('legal.pdf')" href="assets/pdf/legal.pdf" target='_blank'>Descargar pdf <i class="icon-pdf"></i> </a>
+                    </div>
+                    <h2>Cuestiones legales y laborales</h2>
+                    <span>Escuche el audio completo de esta página a continuación</span>
+                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
+                    <br><br>
+                    <p class="detail-pera">Las personas con cáncer a menudo tienen preguntas sobre cómo mantener el empleo durante el tratamiento, cómo acceder a los beneficios públicos y del seguro, y otros asuntos legales. Se ofrece ayuda sin ningún costo.</p>
+                    <p class="detail-pera">Organizaciones nacionales sin fines de lucro proporcionan información y asesoramiento gratuitos a las personas con cáncer que pueden tener dificultades con cuestiones relacionadas con el empleo, el seguro, la licencia médica, la planificación testamentaria y otros temas legales. A continuación se incluyen algunas:</p>
+                    <ul class="left-side">
+                        <li><a (click)="logWebsite('https://www.patientadvocate.org/es/')" href='https://www.patientadvocate.org/es/' target='_blank'>Patient Advocate Foundation</a> (800-532-5274) brinda educación, asesoramiento legal y recomendaciones para las personas con cáncer con cuestiones relacionadas con seguros, problemas financieros, deudas y discriminación en el trabajo. También ofrece ayuda con los copagos y asistencia financiera para quienes cumplen los requisitos.</li>
+                        <li><a (click)="logWebsite('https://thedrlc.org/cancer')" href='https://thedrlc.org/cancer' target='_blank'>Cancer Legal Resource Center</a> (866-843-2572) proporciona información a través de su línea de asistencia telefónica nacional, programas de alcance y actividades comunitarias para educar y apoyar a los pacientes con cáncer, a sus familias, a los profesionales de la salud y a los defensores en asuntos como conservar el empleo durante el tratamiento, acceder a la atención médica y a los beneficios públicos, solicitar una licencia médica y planificar un testamento.</li> 
+                        <li><a (click)="logWebsite('https://www.cancerandcareers.org/es')" href='https://www.cancerandcareers.org/es' target='_blank'>Cancer and Careers</a> dispone de orientación vocacional, herramientas y recursos para capacitar a las personas con cáncer para que prosperen en su lugar de trabajo.</li>
+                    </ul>                    
+                    <img src="assets/img/ManagingLegalWorkplaceIssues_B.jpg" class="mt-20" width="100%" />
+                </div>   
+            </div> 
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail pb-0 border-top">
+                    <p class="semibold-text light-height">Financial & Practical Matters</p> 
+                    <ul class="right-side-list mt-20"> 
+                        <li><a [routerLink]="'/patient-resources/financial/cost'">Gestión del costo del tratamiento</a></li>
+                        <li class="active" ><a [routerLink]="'/patient-resources/financial/legal'">Cuestiones legales y laborales</a></li>
+                        <li><a [routerLink]="'/patient-resources/financial/transportation'">Manejo del transporte y otras preocupaciones</a></li>
+                        <li><a [routerLink]="'/patient-resources/financial/bodyimage'">Manejando la pérdida de cabello y preocupaciones acerca de la imagen corporal</a></li>
+                        <br><br>
+                        <li><a [routerLink]="'/patient-resources/financial'"> < REGRESAR A Financial & Practical Matters</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
