@@ -389,6 +389,20 @@ export const SYMPTOM_CARDS: Card[] = [
         icon: 'icon-contact-us',
         text: 'Haga clic aquí para saber sobre las estrategias que puede intentar para aliviar la linfedema y aprender cómo su equipo de atención médica puede ayudarlo/la.',
         route:'symptom-library-lymphedema'
+      },
+      {
+        src: 'assets/img/MouthSores_A.jpg',
+        label: 'Llagas orales',
+        icon: 'icon-contact-us',
+        text: 'Vea esta sección para aprender sobre las estrategias que puede intentar para aliviar las llagas orales y aprender cómo su equipo de atención médica puede ayudarlo/la.',
+        route:'symptom-library-mouthsores'
+      },
+      {
+        src: 'assets/img/Skin_A.jpg',
+        label: 'Piel seca, con prurito/ampollada, o dolorosa',
+        icon: 'icon-contact-us',
+        text: 'Haga clic aquí para saber sobre las estrategias que puede intentar para aliviar la piel seca, con prurito/ampollada, o dolorosa y aprender cómo su equipo de atención médica puede ayudarlo/la.',
+        route:'symptom-library-skin'
       }
     ]
 

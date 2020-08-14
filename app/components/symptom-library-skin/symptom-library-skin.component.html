@@ -1,0 +1,88 @@
+<div id="content-detail" class="content-d">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a [routerLink]="'/dashboard'">Tablero</a></li>
+              <li class="breadcrumb-item"><a [routerLink]="'/symptom-library'">Biblioteca de síntomas</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Piel seca, con prurito/ampollada, o dolorosa</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail"> 
+                    <h2>Piel seca, con prurito/ampollada, o dolorosa</h2>
+                    <div class="foods-btn">
+                    <a class="foods-btn" (click)= "logPDF('symptom-library-skin.pdf')" href="assets/pdf/symptom-library-skin.pdf" target='_blank'>Descargar pdf <i class="icon-pdf"></i> </a> 
+                    </div>
+                    <span>Escuche el audio completo de esta página a continuación</span>
+                    <img src="assets/img/stript.png" class="d-none" width="100%" />
+                     <img src="assets/img/stript-mob.png" class="mob-none" width="100%" />
+                    <br> <br>
+                    <p class="detail-pera">Los cambios en la piel pueden ocurrir debido al tratamiento de cáncer. Los tratamientos como el trasplante de células madre, la inmunoterapia, y la quimioterapia pueden causar problemas graves de la piel. Informe a su equipo de atención médica si nota algún cambio en la piel o si tiene heridas abiertas, que podrían ser un signo de una infección.</p>
+                    <p class="semibold-text pt-pb">Estrategias de autocuidado</p>
+                    <p class="detail-pera">Cuidado de la piel seca y con picazón</p> 
+                    <ul class="left-side">
+                        <li>Después de bañarse, póngase humectantes mientras su piel aún está húmeda</li>
+                        <li>Aplique crema humectante al menos dos veces al día.</li> 
+                        <li>Tome un baño/ducha tibia. No tome una ducha/baño caliente porque puede resecar su piel.</li>
+                        <li>No utilice exfoliantes de baño, esponjas, o esponjas vegetales porque pueden irritar más la piel.</li>
+                        <li>Evite productos que tengan como ingrediente alcohol o fragancia.</li> 
+                        <li>Aplique una toallita fresca o hielo en la piel seca y con prurito.</li> 
+                        <li>Utilice bloqueador solar cuando pase tiempo afuera.</li>
+                        <li>Agregue avena coloidal en sus baños para reducir la picazón.</li> 
+                        <li>Utilice humectantes espesos como Eucerin crema de reparación avanzada o Aquaphor ungüento reparador.</li> 
+                        <li>Utilice detergentes suaves para que no le irriten la piel.</li>  
+                    </ul>
+                    <br>    
+                    <p class="detail-pera">Prevención y tratamiento de úlceras por presión y por decúbito</p>
+                    <ul class="left-side">
+                        <li>Utilice una almohadilla de agua o de aire sobre su colchón.</li>  
+                        <li>Utilice una cama de baja pérdida de aire o una cama de aire fluido.</li> 
+                        <li>Asegúrese de que alguien cambie su posición cada dos horas.</li>   
+                    </ul>
+                    <br>
+                    
+                    <p class="detail-pera">Cómo proteger su piel</p>
+                    <ul class="left-side">
+                        <li>¡Proteja su piel del sol! Use un protector solar de al menos factor 15 cada dos horas o cada hora si nada o si suda. También utilice ropa suelta que proteja la piel del sol.</li> 
+                        <li>Limite la frecuencia con la que se afeita. Podría utilizar una rasuradora eléctrica o dejar de afeitarse si la piel está dolorida.</li>
+                        <li>No use compresas de hielo, almohadillas térmicas, o vendajes en el área que recibió radioterapia. También, la terapia de radiación puede causar que la piel se descame o duela. Asegúrese de mantener las áreas de la terapia de radiación limpias y secas para que no se infecten.</li> 
+                        <li>Use lociones o cremas recomendadas por parte de su equipo de atención médica para evitar que la piel se seque y/o pique.</li> 
+                        <li>Mantenga su hogar fresco y húmedo.</li> 
+                        <li>Cambie sus vendajes con frecuencia para asegurarse de que no se infecten sus heridas.</li>
+                    </ul>
+                    <p class="semibold-text pt-pb">Cómo puede ayudar su equipo de atención médica</p>
+
+                    <p class="detail-pera">Si las estrategias de autocuidado no ayudan, su equipo de atención médica puede recetarle especiales, antibióticos, cremas y/o medicamentos que puede tomar para tratar su piel seca, con picazón/ampollas o dolor.  También pueden referirlo a un/a dermatólogo/a que pueda ayudarle con sus problemas de la piel preocupaciones dermatológicas.</p>
+                    <p class="detail-pera">Para obtener más información sobre piel seca, con picazón y dolorosa haga clic en los enlaces a continuación:</p>
+                     <ul class="left-side">
+                    <li><a (click)="logWebsite('https://www.cancer.net/es/asimilación-con-cáncer/efectos-f%C3%ADsicos-emocionales-y-sociales-del-cáncer/manejo-de-los-efectos-secundarios-f%C3%ADsicos/afecciones-cutáneas')" href="https://www.cancer.net/es/asimilación-con-cáncer/efectos-f%C3%ADsicos-emocionales-y-sociales-del-cáncer/manejo-de-los-efectos-secundarios-f%C3%ADsicos/afecciones-cutáneas" target="_blank">Acceda a Cancer.Net para obtener más información</a></li>
+                    <li><a (click)="logWebsite('https://survivorship.cancer.gov/springboard/symptoms/skin-and-nail-changes')" href="https://survivorship.cancer.gov/springboard/symptoms/skin-and-nail-changes" target="_blank">Acceda a Springboard Beyond Cancer para obtener más información</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail border-top">
+                    <p class="semibold-text">Todos los síntomas</p> 
+                    <ul class="right-side-list">
+                        <li><a href="#/symptom-library-pain">Dolor</a></li>
+                        <li><a href="#/symptom-library-fatigue">Fatiga</a></li>
+                        <li><a href="#/symptom-library-depression">Tristeza</a></li>
+                        <li><a href="#/symptom-library-anxiety">Ansiedad</a></li> 
+                        <li><a href="#/symptom-library-insomnia">Insomnio</a></li>
+                        <li><a href="#/symptom-library-physicalfunction">Función física</a></li>
+                        <li><a href="#/symptom-library-nausea">Náuseas y vómitos</a></li>
+                        <li><a href="#/symptom-library-sexlife">Cambios en su vida sexual</a></li>
+                        <li><a href="#/symptom-library-breath">Falta de aire</a></li>
+                        <li><a href="#/symptom-library-constipation">Estreñimiento</a></li>
+                        <li><a href="#/symptom-library-diarrhea">Diarrea</a></li>
+                        <li><a href="#/symptom-library-neuropathy">Neuropatía periférica</a></li>
+                        <li><a href="#/symptom-library-lymphedema">Linfedema</a></li>
+                        <li><a href="#/symptom-library-mouthsores">Llagas orales</a></li>
+                        <li class="active"><a href="#/symptom-library-skin">Piel seca, con prurito/ampollada, o dolorosa</a></li>  
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

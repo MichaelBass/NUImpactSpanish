@@ -1,7 +1,7 @@
 <div class="container mr-150">
 	<nav aria-label="breadcrumb">
 	  <ol class="breadcrumb">
-	    <li class="breadcrumb-item"><a href="#">Home</a></li>
+	    <li class="breadcrumb-item"><a href="#">Tablero</a></li>
 	    <li class="breadcrumb-item active" aria-current="page">Biblioteca</li>
 	  </ol>
 	</nav>
@@ -16,8 +16,10 @@
 	<div class="row">
 		<div class="col-md-12">
 			<div class="mission">
-				<h3 class="semibold-text">Misión</h3>
-				<p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac turpis sed arcu dapibus porttitor. Cras scelerisque ligula at quam mattis, id interdum metus volutpat. Duis ut euismod lorem. Duis et mauris augue. Cras a varius sem, nec aliquet tellus. Cras ex ex, sodales sit amet eros non, pharetra venenatis sem. Donec nec sem eu nisi vehicula accumsan. Nunc eget est imperdiet, sollicitudin libero ac, varius justo. Fusce cursus mollis ipsum, non tincidunt tellus pharetra feugiat. Sed a ullamcorper odio, in convallis eros. Nam ac condimentum ligula. Quisque non malesuada ipsum. Nullam sed nisi justo. Sed arcu neque, facilisis ut venenatis et, pretium ut turpis. Fusce tincidunt felis est.</p>
+				<h3 class="semibold-text">¡Le doy la bienvenida a My NM Care Corner!</h3>
+				<p class="">El sitio web de My NM Care Corner es parte de un estudio de investigación para brindar una experiencia del manejo de síntomas más personalizada para nuestros pacientes. La información de My NM Care Corner la ha desarrollado un equipo de científicos/as, médicos/as, enfermeros/as, psicólogos/as, y trabajadores sociales.</p> 
+				<p class="">Para que el sitio web se actualice con sus síntomas específicos, necesitará completar sus cuestionarios de salud. Se puede acceder a los cuestionarios a través de MyChart y se pueden completar en internet utilizando una computadora, un teléfono inteligente o una tableta.</p> 
+				<p class="">Haga clic en <a (click)= "logPDF('YourVoiceBetterCare.pdf')" href="assets/pdf/YourVoiceBetterCare.pdf" target='_blank'>este PDF</a> para aprender como completar el cuestionario de salud.</p>
 			</div>
 		</div>
 	</div>
@@ -26,8 +28,8 @@
 		<div class="content-grid clearfix row" >
 			<div class="col-md-3" *ngFor="let cardDeatial of card">
 				<img class="study-image" [src]="cardDeatial['src']" width="100%">
-				<h4 class="semibold-text">{{cardDeatial['title']}}</h4>
-				<p>{{cardDeatial['discription']}}</p>
+				<h4 class="">{{cardDeatial['title']}}</h4>
+				<p class="">{{cardDeatial['description']}}<a href="{{cardDeatial['link']}}" target='_blank'>{{cardDeatial['target']}}</a></p>
 			</div>
 		</div>
 	</div>

@@ -89,6 +89,6 @@ export class DashboardComponent implements OnInit {
   }
 
   displayAll(){
-    this.card = this.redcapService.getSymptom_Cards(0,13);
+    this.card = this.redcapService.getSymptom_Cards(0,15);
   }
 }

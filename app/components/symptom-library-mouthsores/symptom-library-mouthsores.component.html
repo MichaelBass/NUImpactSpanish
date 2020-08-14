@@ -1,0 +1,86 @@
+<div id="content-detail" class="content-d">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a [routerLink]="'/dashboard'">Tablero</a></li>
+              <li class="breadcrumb-item"><a [routerLink]="'/symptom-library'">Biblioteca de síntomas</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Llagas orales</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail"> 
+                    <h2>Llagas orales</h2>
+                    <div class="foods-btn">
+                    <a class="foods-btn" (click)= "logPDF('symptom-library-mouthsores.pdf')" href="assets/pdf/symptom-library-mouthsores.pdf" target='_blank'>Descargar pdf <i class="icon-pdf"></i> </a> 
+                    </div>
+                    <span>Escuche el audio completo de esta página a continuación</span>
+                    <img src="assets/img/stript.png" class="d-none" width="100%" />
+                     <img src="assets/img/stript-mob.png" class="mob-none" width="100%" />
+                    <br> <br>
+                    <p class="detail-pera">El término médico para las llagas en la boca es mucositis. Pueden verse como cortes y/o ulceras en la boca. Las llagas en la boca pueden variar en severidad.  Es posible que sienta una leve molestia en la boca o que no pueda comer debido al dolor. A continuación, encontrará estrategias para controlar las úlceras bucales en el hogar y cómo su equipo de atención médica puede ayudarle.</p>
+                    <p class="detail-pera"><b>Comentario:</b> Comuníquele a su equipo de atención médica cuando comience a notar cambios en la boca.</p>        
+                    <p class="detail-pera">Las causas comunes de llagas en la boca pueden incluir:</p> 
+                    <ul class="left-side">
+                        <li>Ciertos tipos de quimioterapia e inmunoterapia.</li> 
+                        <li>Ciertos medicamentos utilizados para tratar el cáncer</li>
+                        <li>Radiación</li> 
+                        <li>Deshidratación</li> 
+                        <li>Un bajo nivel en ciertas vitaminas</li>
+                        <li>Uso de alcohol y tabaco</li>  
+                    </ul>
+                    <p class="semibold-text pt-pb">Estrategias de autocuidado</p>
+                    <ul class="left-side">
+                        <li>Evite los alimentos y bebidas picantes, crujientes, saladas, o dulces.</li>
+                        <li>Evite tomar bebidas alcohólicas y usar productos de tabaco.</li>
+                        <li>Evite usar sus dentaduras postizas por la noche y quíteselas entre comidas.</li> 
+                        <li>No utilice enjuagues bucales que contengan alcohol.</li>
+                        <li>Coma alimentos que sean fáciles de tragar. Trate de comer alimentos que sean húmedos y suaves.</li>
+                        <li>Use una licuadora para preparar batidos o para procesar su comida para que sea menos doloroso comer.</li>
+                        <li>Pruebe pastillas o aerosoles de venta libre que puedan adormecerle la boca.</li> 
+                        <li>Los analgésicos de venta libre puede ayudar a aliviar el dolor.</li> 
+                        <li>Asegúrese de lavarse los dientes con frecuencia. Utilice hisopos orales desechables cuando sea muy doloroso cepillarse los dientes con un cepillo de dientes normal.</li> 
+                        <li>Enjuáguese o haga gárgaras con una solución de 1/4 cucharita de sal o una cucharadita de bicarbonato de sodio en una taza (8 onzas) de agua tibia. Continúe con un enjuague de solamente agua.</li>
+                    </ul>
+                    <br>    
+                    <p class="detail-pera">Estrategias para prevenir las llagas en la boca</p>
+                    <ul class="left-side">
+                        <li>Antes y durante el tratamiento de quimioterapia, chupe trozos de hielo para ayudar a prevenir el desarrollo de llagas en la boca</li>
+                        <li>Limpie y revise su boca diariamente. Si nota algún cambio en su boca, comuníqueselo a su equipo de atención médica.</li> 
+                        <li>Antes de comenzar cualquier tratamiento para el cáncer que involucre la boca o la garganta, debería visitar a un/a dentista oncológico para minimizar los efectos secundarios del tratamiento.</li>   
+                    </ul>
+                    <br>
+                    <p class="semibold-text pt-pb">Cómo puede ayudar su equipo de atención médica</p>
+                    <p class="detail-pera">Si las estrategias de autocuidado no ayudan, pregúntele a su equipo de atención médica si le pueden recetar un enjuague bucal que pueda reducir el dolor y curar las llagas orales. También podrían recetarle analgésicos.</p>
+                    <p class="detail-pera">Para más información acerca de las llagas orales haga clic en los siguientes enlaces:</p>
+                     <ul class="left-side">
+                    <li><a (click)="logWebsite('https://www.cancer.net/es/asimilación-con-cáncer/efectos-f%C3%ADsicos-emocionales-y-sociales-del-cáncer/manejo-de-los-efectos-secundarios-f%C3%ADsicos/llagas-en-la-boca-o-mucositis')" href="https://www.cancer.net/es/asimilación-con-cáncer/efectos-f%C3%ADsicos-emocionales-y-sociales-del-cáncer/manejo-de-los-efectos-secundarios-f%C3%ADsicos/llagas-en-la-boca-o-mucositis" target="_blank">Acceda a Cancer.Net para obtener más información</a></li>
+                    <li><a (click)="logWebsite('https://survivorship.cancer.gov/springboard/symptoms/mouth-gum-throat-problems')" href="https://survivorship.cancer.gov/springboard/symptoms/mouth-gum-throat-problems" target="_blank">Acceda a Springboard Beyond Cancer para obtener más información</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail border-top">
+                    <p class="semibold-text">Todos los síntomas</p> 
+                    <ul class="right-side-list">
+                        <li><a href="#/symptom-library-pain">Dolor</a></li>
+                        <li><a href="#/symptom-library-fatigue">Fatiga</a></li>
+                        <li><a href="#/symptom-library-depression">Tristeza</a></li>
+                        <li><a href="#/symptom-library-anxiety">Ansiedad</a></li> 
+                        <li><a href="#/symptom-library-insomnia">Insomnio</a></li>
+                        <li><a href="#/symptom-library-physicalfunction">Función física</a></li>
+                        <li><a href="#/symptom-library-nausea">Náuseas y vómitos</a></li>
+                        <li><a href="#/symptom-library-sexlife">Cambios en su vida sexual</a></li>
+                        <li><a href="#/symptom-library-breath">Falta de aire</a></li>
+                        <li><a href="#/symptom-library-constipation">Estreñimiento</a></li>
+                        <li><a href="#/symptom-library-diarrhea">Diarrea</a></li>
+                        <li><a href="#/symptom-library-neuropathy">Neuropatía periférica</a></li>
+                        <li><a href="#/symptom-library-lymphedema">Linfedema</a></li>
+                        <li class="active"><a href="#/symptom-library-mouthsores">Llagas orales</a></li>
+                        <li><a href="#/symptom-library-skin">Piel seca, con prurito/ampollada, o dolorosa</a></li>       
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

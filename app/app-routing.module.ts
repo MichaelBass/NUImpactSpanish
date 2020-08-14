@@ -64,7 +64,8 @@ import { SymptomLibraryConstipationComponent } from './components/symptom-librar
 import { SymptomLibraryDiarrheaComponent } from './components/symptom-library-diarrhea/symptom-library-diarrhea.component';
 import { SymptomLibrarySexLifeComponent } from './components/symptom-library-sexlife/symptom-library-sexlife.component';
 import { SymptomLibraryNeuropathyComponent } from './components/symptom-library-neuropathy/symptom-library-neuropathy.component';
-
+import { SymptomLibraryMouthSoresComponent } from './components/symptom-library-mouthsores/symptom-library-mouthsores.component';
+import { SymptomLibrarySkinComponent } from './components/symptom-library-skin/symptom-library-skin.component';
 
 import { HomeOverlayComponent } from "./components/home-overlay/home-overlay.component";
 
@@ -129,7 +130,9 @@ const routes: Routes = [
 	{ path: "symptom-library-constipation", component: SymptomLibraryConstipationComponent  },
 	{ path: "symptom-library-diarrhea", component: SymptomLibraryDiarrheaComponent },
 	{ path: "symptom-library-sexlife", component: SymptomLibrarySexLifeComponent },
-	{ path: "symptom-library-neuropathy", component: SymptomLibraryNeuropathyComponent }	
+	{ path: "symptom-library-neuropathy", component: SymptomLibraryNeuropathyComponent },
+	{ path: "symptom-library-mouthsores", component: SymptomLibraryMouthSoresComponent },
+	{ path: "symptom-library-skin", component: SymptomLibrarySkinComponent }			
 ];
 
 @NgModule({

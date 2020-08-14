@@ -58,7 +58,6 @@ import { RehabilitationComponent } from './components/patient-resources/treatmen
 import { SurvivorshipComponent } from './components/patient-resources/treatment/survivorship/survivorship.component';
 
 
-
 import { HttpClientModule } from '@angular/common/http';
 import { RedcapService } from './services/redcap.service';
 import { EncrDecrService } from './services/encr-decr.service';
@@ -78,6 +77,9 @@ import { SymptomLibraryConstipationComponent } from './components/symptom-librar
 import { SymptomLibraryDiarrheaComponent } from './components/symptom-library-diarrhea/symptom-library-diarrhea.component';
 import { SymptomLibrarySexLifeComponent } from './components/symptom-library-sexlife/symptom-library-sexlife.component';
 import { SymptomLibraryNeuropathyComponent } from './components/symptom-library-neuropathy/symptom-library-neuropathy.component';
+import { SymptomLibraryMouthSoresComponent } from './components/symptom-library-mouthsores/symptom-library-mouthsores.component';
+import { SymptomLibrarySkinComponent } from './components/symptom-library-skin/symptom-library-skin.component';
+
 
 @NgModule({
   declarations: [
@@ -138,7 +140,9 @@ import { SymptomLibraryNeuropathyComponent } from './components/symptom-library-
     SymptomLibraryConstipationComponent,
     SymptomLibraryDiarrheaComponent,
     SymptomLibrarySexLifeComponent,
-    SymptomLibraryNeuropathyComponent 
+    SymptomLibraryNeuropathyComponent,
+    SymptomLibraryMouthSoresComponent,
+    SymptomLibrarySkinComponent  
   ],
   imports: [
     FormsModule,
