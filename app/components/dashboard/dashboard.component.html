@@ -33,12 +33,12 @@
 			  </mat-card-content>
 			  <mat-divider></mat-divider>
 			  <mat-card-actions>
-			    <a [routerLink]="['/',cardsrc.route]" ><i class="material-icons">arrow_forward </i>Leer sobre el síntoma</a>
+			    <a [routerLink]="['/',cardsrc.route]" ><i class="material-icons">arrow_forward </i>Leer Más</a>
 			  </mat-card-actions>
 			</mat-card>
 		</div>
 	</div>
 	<div class="text-center view-more">
-		<button mat-stroked-button (click)="displayAll()">Ver más</button>
+		<button mat-stroked-button (click)="displayAll($event)">Ver más</button>
 	</div>
 </div>

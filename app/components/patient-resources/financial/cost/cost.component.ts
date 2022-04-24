@@ -13,7 +13,7 @@ declare var SC;
 export class CostComponent implements OnInit {
 
   isFav: boolean = false;
-  label: string = "Managing the Cost of Treatment";
+  label: string = "Gestionar el costo del tratamiento";
 
   constructor(private redcapService: RedcapService) { }
 

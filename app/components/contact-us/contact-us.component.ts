@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormControl} from '@angular/forms';
+import {RedcapService} from "../../services/redcap.service";
 
 @Component({
   selector: 'app-contact-us',
@@ -8,12 +9,13 @@ import { FormBuilder, FormGroup, Validators, FormControl} from '@angular/forms';
 })
 export class ContactUsComponent implements OnInit {
 	sendComment: FormGroup;
+  confirmation: string;
 
-	constructor(private formBuilder: FormBuilder) {
+	constructor(private formBuilder: FormBuilder, private redcapService: RedcapService) {
 
 	}
 
-    ngOnInit() {
+  ngOnInit() {
 		this.sendComment = this.formBuilder.group({
       		fullName: ['', Validators.compose([Validators.pattern(/^[a-zA-Z]+[a-zA-Z '".-]*$/), Validators.required])],
       		email: ['', Validators.compose([Validators.pattern(
@@ -22,7 +24,12 @@ export class ContactUsComponent implements OnInit {
       		message: ['', Validators.compose([Validators.pattern(/^[a-zA-Z]+[a-zA-Z '".-]*$/), Validators.required])],
   	    });
 	}
+
 	submit(){
-		console.log('form', this.sendComment.value);
+    this.redcapService.saveComments(JSON.stringify(this.sendComment.value)).subscribe(
+      (qs_param: any) => {
+        this.confirmation = qs_param.message;  //TODO localize "Comments save or Thank you for your comment"
+      }
+    );
 	}
 }

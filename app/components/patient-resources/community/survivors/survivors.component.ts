@@ -12,7 +12,7 @@ declare var SC;
 export class SurvivorsComponent implements OnInit {
 
   isFav: boolean = false;
-  label: string = "One to One Support from Cancer Survivors";
+  label: string = "El soporte individual de los sobrevivientes del cáncer";
 
   constructor(private redcapService: RedcapService) { }
 

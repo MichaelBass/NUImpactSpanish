@@ -14,7 +14,7 @@ declare var SC;
 export class TalkingComponent implements OnInit {
 
   isFav: boolean = false;
-  label: string = "Talking with Your Health Care Team";
+  label: string = "Hablar con su equipo de atención médica";
 
   constructor(private redcapService: RedcapService) { }
 

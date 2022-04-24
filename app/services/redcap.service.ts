@@ -529,10 +529,16 @@ export class RedcapService {
     return this.lastTimedSegment ;
   }
 
+  saveComments(data:string):Observable<any> {
+     return this.http.post<any>('https://symon.fsm.northwestern.edu/impactWS/Comments', JSON.parse(data) ).pipe(
+        map(res => res),
+        catchError(this.handleError)
+      );    
+  }
 
   initialTimedSegment(ts: TimedSegment, data:string):Observable<any>  {
     this.timedSegment = ts;
-     return this.http.post<any>('https://symon.fsm.northwestern.edu/impactWS/Crypto', JSON.parse("{\"user\":\"" + ts.user + "\",\"data\":\"" + data + "\"}") ).pipe(
+     return this.http.post<any>('https://symon.fsm.northwestern.edu/impactWS/Crypto', JSON.parse("{\"user\":\"" + ts.user + "\",\"language\":\"ES\",\"data\":\"" + data + "\"}") ).pipe(
         map(res => res),
         catchError(this.handleError)
       );    

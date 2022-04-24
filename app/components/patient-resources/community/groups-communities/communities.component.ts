@@ -12,7 +12,7 @@ declare var SC;
 export class CommunitiesComponent implements OnInit {
 
   isFav: boolean = false;
-  label: string = "Local Support Groups & Communities";
+  label: string = "Grupos de apoyo locales y comunidades";
 
   constructor(private redcapService: RedcapService) { }
 

@@ -13,7 +13,7 @@ declare var SC;
 export class LegalComponent implements OnInit {
 
   isFav: boolean = false;
-  label: string = "Legal and Workplace Issues";
+  label: string = "Problemas legales y laborales";
 
   constructor(private redcapService: RedcapService) { }
 

@@ -5,7 +5,7 @@
             <li class="breadcrumb-item"><a href="#">Tablero</a></li>
               <li class="breadcrumb-item d-none"><a href="#">...</a></li>
               <li class="breadcrumb-item mob-hidden"><a href="#/patient-resources">Recursos para pacientes</a></li>
-              <li class="breadcrumb-item"><a href="#/patient-resources/financial">Financial & Practical Matters</a></li>
+              <li class="breadcrumb-item"><a href="#/patient-resources/financial">Cuestiones prácticas y financieras</a></li>
             <li class="breadcrumb-item active mob-hidden" aria-current="page">Gestión del costo del tratamiento</li>
             </ol>
         </nav>
@@ -13,12 +13,12 @@
             <div class="col-md-8 col-sm-12">
                 <div class="check-detail pt-0">
                     <div class="foods-btn">
-                        <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Agregar a favoritos' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
+                        <a (click)= "toggleFavorite()">{{ isFav ? 'Quitar de favoritos' : 'Agregar a favoritos' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
                         <a (click)= "logPDF('cost.pdf')" href="assets/pdf/cost.pdf" target='_blank'>Descargar pdf <i class="icon-pdf"></i> </a>
                     </div>
                     <h2>Gestión del costo del tratamiento</h2>
                     <span>Escuche el audio completo de esta página a continuación</span>
-                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
+                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/906613705%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
                     <br><br>
                     <p class="detail-pera">El costo del tratamiento del cáncer puede ser una preocupación si usted o un miembro de su familia son diagnosticados con cáncer. Existen recursos que lo ayudarán a administrar el costo de la atención, incluidos los medicamentos.</p>
                     <p class="detail-pera">A continuación se incluye una lista de recursos de asistencia financiera. No se trata de una lista completa y el acceso a los fondos a través de estos programas puede abrirse y cerrarse sin aviso previo. Consulte a su equipo médico y a su trabajador social de oncología para saber si existen otros recursos a su disposición.</p>
@@ -26,15 +26,14 @@
                     <ul class="left-side">
                         <li>El <a (click)="logWebsite('https://www.nm.org/patients-and-visitors/billing-and-insurance/financial-assistance')" href='https://www.nm.org/patients-and-visitors/billing-and-insurance/financial-assistance' target='_blank'>Departamento de asistencia financiera de Northwestern Medicine</a> (800.423.0523) está disponible para quienes tienen dificultades para pagar los servicios de los proveedores de Northwestern Medicine y cumplen con otros requisitos. Las solicitudes se pueden realizar en línea o por teléfono.</li> 
                         <li>La <a (click)="logWebsite('https://www.cancerfac.org')" href='https://www.cancerfac.org' target='_blank'>Coalición de Asistencia Financiera para el Cáncer</a> (Cancer Financial Assistance Coalition, CFAC) es un grupo de organizaciones nacionales que proporcionan ayuda financiera a los pacientes. La CFAC cuenta con una base de datos en la que se pueden buscar recursos financieros.</li> 
-                        <li><a (click)="logWebsite('https://www.cancercare.org')" href='https://www.cancercare.org' target='_blank'>CancerCare</a> (800-813-4673) ofrece asistencia financiera limitada para copagos, transporte, atención domiciliaria y cuidado de niños. También dispone de una lista de proveedores de asistencia financiera y una base de datos de organizaciones que brindan ayuda financiera o práctica.</li> 
-                        <li><a (click)="logWebsite('https://cancerfinances.org')" href='https://cancerfinances.org' target='_blank'>Cancer Finances</a> proporciona una herramienta en línea para guiarlo en algunos temas importantes que pueden afectar su situación financiera. Independientemente de que su diagnóstico sea reciente o de que lleve muchos años de tratamiento activo, este sitio puede ayudarlo a administrar sus finanzas después del cáncer.</li>
+                        <li><a (click)="logWebsite('https://www.cancercare.org/espanol')" href='https://www.cancercare.org/espanol' target='_blank'>CancerCare</a> (800-813-4673) ofrece asistencia financiera limitada para copagos, transporte, atención domiciliaria y cuidado de niños. También dispone de una lista de proveedores de asistencia financiera y una base de datos de organizaciones que brindan ayuda financiera o práctica.</li>
                     </ul>
                     <p class="bold-text pt-pb">Asistencia con los medicamentos:</p>
                     <ul class="left-side">
                         <li><a (click)="logWebsite('https://tafcares.org')" href='https://tafcares.org' target='_blank'>The Assist Fund</a> (855-845-3663) brinda apoyo financiero a los pacientes con enfermedades crónicas que requieren medicamentos costosos.</li>  
                         <li><a (click)="logWebsite('https://www.mygooddays.org')" href='https://www.mygooddays.org' target='_blank'>Good Days</a> (877-968-7233) ofrece apoyo financiero mediante la cobertura de copagos para quienes se encuentran en condiciones que alteran su vida.</li> 
                         <li><a (click)="logWebsite('https://www.needymeds.org')" href='https://www.needymeds.org' target='_blank'>NeedyMeds.com</a> (800-503-6897) se dedica a ayudar a las personas a encontrar programas de asistencia para poder pagar sus medicamentos y otros costos de atención médica.</li>  
-                        <li><a (click)="logWebsite('https://medicineassistancetool.org')" href='https://medicineassistancetool.org' target='_blank'>Partnership for Prescription Assistance</a> ayuda a los pacientes que cumplen con los requisitos y que carecen de cobertura para medicamentos recetados a obtener los medicamentos que necesitan.</li> 
+                        <li><a (click)="logWebsite('https://medicineassistancetool.org/es')" href='https://medicineassistancetool.org/es' target='_blank'>Medicine Assistance Tool</a> ayuda a los pacientes que cumplen con los requisitos y que carecen de cobertura para medicamentos recetados a obtener los medicamentos que necesitan.</li> 
                         <li><a (click)="logWebsite('https://www.rxhope.com')" href='https://www.rxhope.com' target='_blank'>RxHope.com</a> ayuda a los pacientes a obtener medicamentos recetados gratis o a bajo costo.</li> 
                     </ul>                    
                     <img src="assets/img/ManagingtheCostofTreatment_B.jpg" class="mt-20" width="100%" />
@@ -42,14 +41,14 @@
             </div> 
             <div class="col-md-3 col-sm-12">  
                 <div class="check-detail pb-0 border-top">
-                    <p class="semibold-text light-height">Financial & Practical Matters</p> 
+                    <p class="semibold-text light-height">Cuestiones prácticas y financieras</p> 
                     <ul class="right-side-list mt-20"> 
                         <li class="active" ><a [routerLink]="'/patient-resources/financial/cost'">Gestión del costo del tratamiento</a></li>
                         <li><a [routerLink]="'/patient-resources/financial/legal'">Cuestiones legales y laborales</a></li>
                         <li><a [routerLink]="'/patient-resources/financial/transportation'">Manejo del transporte y otras preocupaciones</a></li>
                         <li><a [routerLink]="'/patient-resources/financial/bodyimage'">Manejando la pérdida de cabello y preocupaciones acerca de la imagen corporal</a></li>
                         <br><br>
-                        <li><a [routerLink]="'/patient-resources/financial'"> < REGRESAR A Financial & Practical Matters</a></li>
+                        <li><a [routerLink]="'/patient-resources/financial'"> < REGRESAR A Cuestiones prácticas y financieras</a></li>
                     </ul>
                 </div>
             </div> 

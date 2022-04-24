@@ -14,7 +14,7 @@ declare var SC;
 export class StressComponent implements OnInit {
 
   isFav: boolean = false;
-  label: string = "Stress Management";
+  label: string = "Manejo del estrés";
 
   constructor(private redcapService: RedcapService) { }
 

@@ -14,7 +14,7 @@ declare var SC;
 export class SupportiveComponent implements OnInit {
 
   isFav: boolean = false;
-  label: string = "Supportive Oncology and Palliative Care";
+  label: string = "Oncología de apoyo y cuidado paliativo";
 
   constructor(private redcapService: RedcapService) { }
 

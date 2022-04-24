@@ -5,7 +5,7 @@
             <li class="breadcrumb-item"><a href="#">Tablero</a></li>
               <li class="breadcrumb-item d-none"><a href="#">...</a></li>
               <li class="breadcrumb-item mob-hidden"><a href="#/patient-resources">Recursos para pacientes</a></li>
-              <li class="breadcrumb-item"><a href="#/patient-resources/treatment">Treatment Symptom Management</a></li>
+              <li class="breadcrumb-item"><a href="#/patient-resources/treatment">Gestión del tratamiento de síntomas</a></li>
             <li class="breadcrumb-item active mob-hidden" aria-current="page">Servicios para la supervivencia del cáncer</li>
             </ol>
         </nav>
@@ -13,30 +13,30 @@
             <div class="col-md-8 col-sm-12">
                 <div class="check-detail pt-0">
                     <div class="foods-btn">
-                        <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Agregar a favoritos' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
+                        <a (click)= "toggleFavorite()">{{ isFav ? 'Quitar de favoritos' : 'Agregar a favoritos' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
                         <a (click)= "logPDF('survivorship.pdf')" href="assets/pdf/survivorship.pdf" target='_blank'>Descargar pdf <i class="icon-pdf"></i> </a>
                     </div>
                     <h2>Servicios para la supervivencia del cáncer</h2>
                     <span>Escuche el audio completo de esta página a continuación</span>
-                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
+                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/906624481%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
                     <br><br>
                     <p class="detail-pera">Los servicios para la supervivencia del cáncer pueden ayudarlo/la a gestionar los efectos a largo plazo del cáncer o de los tratamientos relacionados con el cáncer.</p>  
                     <p class="detail-pera">En la actualidad, más que nunca, los sobrevivientes del cáncer están llevando vidas sanas y satisfactorias debido a varios avances en la detección temprana, los diagnósticos y a los tratamientos. Sin embargo, los efectos a largo plazo del cáncer y las terapias relacionadas con el cáncer requieren vigilancia y apoyo continuos.</p>
                     <p class="detail-pera">Las clínicas de supervivencia al cáncer brindan a los pacientes una amplia variedad de servicios, que incluyen resúmenes de tratamiento, planes futuros de atención médica, monitoreo de efectos secundarios continuos, consejos para estilos de vida saludables y herramientas para abordar las preocupaciones físicas y emocionales. Para obtener más información, <a (click)="logWebsite('https://www.cancer.northwestern.edu/cancer-care/survivorship/index.html')" href="https://www.cancer.northwestern.edu/cancer-care/survivorship/index.html" target="_blank">haga clic aquí</a>.</p>
-                    <p class="detail-pera">Hay servicios y recursos adicionales, disponibles para ayudar con efectos específicos a largo plazo asociados con el cáncer, como dolor crónico, problemas de fertilidad y nutrición. Para obtener más información, <a (click)="logWebsite('https://www.cancer.northwestern.edu/cancer-care/survivorship/index.html')" href="https://www.cancer.northwestern.edu/cancer-care/survivorship/index.html" target="_blank">haga clic aquí</a>.</p>
+                    <p class="detail-pera">Hay servicios y recursos adicionales, disponibles para ayudar con efectos específicos a largo plazo asociados con el cáncer, como dolor crónico, problemas de fertilidad y nutrición. Para obtener más información, <a (click)="logWebsite('https://www.cancer.northwestern.edu/cancer-care/survivorship/side-effects.html')" href="https://www.cancer.northwestern.edu/cancer-care/survivorship/side-effects.html" target="_blank">haga clic aquí</a>.</p>
                     <img src="assets/img/CancerSurvivorship_B.jpg" class="mt-20" width="100%" />
                 </div>   
             </div> 
             <div class="col-md-3 col-sm-12">  
                 <div class="check-detail pb-0 border-top">
-                    <p class="semibold-text light-height">Treatment Symptom Management</p> 
+                    <p class="semibold-text light-height">Gestión del tratamiento de síntomas</p> 
                     <ul class="right-side-list mt-20">
                         <li><a [routerLink]="'/patient-resources/treatment/integrative'">Medicina integral</a></li>
                         <li><a [routerLink]="'/patient-resources/treatment/palliative'">Cuidados paliativos</a></li>
                         <li><a [routerLink]="'/patient-resources/treatment/rehabilitation'">Servicios de rehabilitación del cáncer</a></li>
                         <li class="active" ><a [routerLink]="'/patient-resources/treatment/survivorship'">Servicios para la supervivencia del cáncer</a></li>
                         <br><br>
-                        <li><a [routerLink]="'/patient-resources/treatment'"> < REGRESAR A Treatment Symptom Management</a></li>
+                        <li><a [routerLink]="'/patient-resources/treatment'"> < REGRESAR A Gestión del tratamiento de síntomas</a></li>
                     </ul>
                 </div>
             </div> 

@@ -14,7 +14,7 @@ declare var SC;
 export class BodyImageComponent implements OnInit {
 
   isFav: boolean = false;
-  label: string = "Managing Hair Loss and Body Image Concerns";
+  label: string = "Control de la pérdida de cabello y preocupaciones por el aspecto";
 
   constructor(private redcapService: RedcapService) { }
 

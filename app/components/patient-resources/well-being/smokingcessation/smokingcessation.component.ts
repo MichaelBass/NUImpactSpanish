@@ -14,7 +14,7 @@ declare var SC;
 export class SmokingCessationComponent implements OnInit {
 
   isFav: boolean = false;
-  label: string = "Smoking Cessation and Substance Abuse";
+  label: string = "Cese de fumar y del uso de sustancias";
 
   constructor(private redcapService: RedcapService) { }
 

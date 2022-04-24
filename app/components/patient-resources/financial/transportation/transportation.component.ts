@@ -14,7 +14,7 @@ declare var SC;
 export class TransportationComponent implements OnInit {
 
   isFav: boolean = false;
-  label: string = "Managing Transportation and Other Concerns";
+  label: string = "Gestión del transporte y otras preocupaciones";
 
   constructor(private redcapService: RedcapService) { }
 

@@ -14,7 +14,7 @@ declare var SC;
 export class SurvivorshipComponent implements OnInit {
 
   isFav: boolean = false;
-  label: string = "Cancer Survivorship Services";
+  label: string = "Servicios de supervivencia del cáncer";
 
   constructor(private redcapService: RedcapService) { }
 

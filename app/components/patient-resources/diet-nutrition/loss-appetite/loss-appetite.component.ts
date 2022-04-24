@@ -13,7 +13,7 @@ declare var SC;
 export class LossAppetiteComponent implements OnInit {
 
   isFav: boolean = false;
-  label: string = "Dealing with a Loss of Appetite";
+  label: string = "Lidiando con la pérdida de apetito";
 
   constructor(private redcapService: RedcapService) { }
 

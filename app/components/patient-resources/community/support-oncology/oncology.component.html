@@ -5,7 +5,7 @@
             <li class="breadcrumb-item"><a href="#">Tablero</a></li>
               <li class="breadcrumb-item d-none"><a href="#">...</a></li>
               <li class="breadcrumb-item mob-hidden"><a href="#/patient-resources">Recursos para pacientes</a></li>
-              <li class="breadcrumb-item"><a href="#/patient-resources/community">Support Services & Resources</a></li>
+              <li class="breadcrumb-item"><a href="#/patient-resources/community">Recursos comunitarios</a></li>
             <li class="breadcrumb-item active mob-hidden" aria-current="page">Oncología de apoyo en Northwestern Medicine</li>
             </ol>
         </nav>
@@ -13,12 +13,12 @@
             <div class="col-md-8 col-sm-12">
                 <div class="check-detail pt-0">
                     <div class="foods-btn">
-                        <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Agregar a favoritos' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
+                        <a (click)= "toggleFavorite()">{{ isFav ? 'Quitar de favoritos' : 'Agregar a favoritos' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
                         <a (click)= "logPDF('oncology.pdf')" href="assets/pdf/oncology.pdf" target='_blank'>Descargar pdf <i class="icon-pdf"></i> </a>
                     </div>
                     <h2>Oncología de apoyo en Northwestern Medicine</h2>
                     <span>Escuche el audio completo de esta página a continuación</span>
-                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
+                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/906607492%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
                     <br> <br>
                     <p class="detail-pera">Los servicios de apoyo oncológico complementan su plan de tratamiento para el cáncer mediante apoyo emocional y práctico a lo largo de todo el tratamiento del cáncer.</p>
                     <p>En Northwestern Medicine, los servicios ambulatorios de oncología de apoyo incluyen lo siguiente:</p>
@@ -42,13 +42,13 @@
             </div> 
             <div class="col-md-3 col-sm-12">  
                 <div class="check-detail pb-0 border-top">
-                    <p class="semibold-text light-height">Support Services & Resources</p> 
+                    <p class="semibold-text light-height">Recursos comunitarios</p> 
                     <ul class="right-side-list mt-20"> 
                         <li><a [routerLink]="'/patient-resources/community/local'">Grupos de apoyo y comunidades locales</a></li>
                         <li><a [routerLink]="'/patient-resources/community/online'">Apoyo en línea y por teléfono</a></li>
                         <li class="active" ><a [routerLink]="'/patient-resources/community/oncology'">Oncología de apoyo en Northwestern Medicine</a></li>
                         <li><a [routerLink]="'/patient-resources/community/survivors'">Apoyo individual brindado por sobrevivientes de cáncer</a></li><br><br>
-                        <li><a [routerLink]="'/patient-resources/community'"> < REGRESAR A Support Services & Resources </a></li>
+                        <li><a [routerLink]="'/patient-resources/community'"> < REGRESAR A Recursos comunitarios</a></li>
                     </ul>
                 </div>
             </div> 

@@ -14,7 +14,7 @@ declare var SC;
 export class PhysicalComponent implements OnInit {
 
   isFav: boolean = false;
-  label: string = "Physical Activity";
+  label: string = "Actividad física";
 
   constructor(private redcapService: RedcapService) { }
 

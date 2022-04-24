@@ -14,7 +14,7 @@ declare var SC;
 export class IntegrativeComponent implements OnInit {
 
   isFav: boolean = false;
-  label: string = "Integrative Medicine";
+  label: string = "Medicina holística";
 
   constructor(private redcapService: RedcapService) { }
 

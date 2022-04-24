@@ -14,7 +14,7 @@ declare var SC;
 export class ProblemComponent implements OnInit {
 
   isFav: boolean = false;
-  label: string = "Problem Solving";
+  label: string = "Solución de problemas bajo estrés";
 
   constructor(private redcapService: RedcapService) { }
 

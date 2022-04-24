@@ -5,7 +5,7 @@
             <li class="breadcrumb-item"><a href="#">Tablero</a></li>
               <li class="breadcrumb-item d-none"><a href="#">...</a></li>
               <li class="breadcrumb-item mob-hidden"><a href="#/patient-resources">Recursos para pacientes</a></li>
-              <li class="breadcrumb-item"><a href="#/patient-resources/financial">Financial & Practical Matters</a></li>
+              <li class="breadcrumb-item"><a href="#/patient-resources/financial">Cuestiones prácticas y financieras</a></li>
             <li class="breadcrumb-item active mob-hidden" aria-current="page">Manejando la pérdida de cabello y preocupaciones acerca de la imagen corporal</li>
             </ol>
         </nav>
@@ -13,12 +13,12 @@
             <div class="col-md-8 col-sm-12">
                 <div class="check-detail pt-0">
                     <div class="foods-btn">
-                        <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Agregar a favoritos' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
+                        <a (click)= "toggleFavorite()">{{ isFav ? 'Quitar de favoritos' : 'Agregar a favoritos' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
                         <a (click)= "logPDF('bodyimage.pdf')" href="assets/pdf/bodyimage.pdf" target='_blank'>Descargar pdf <i class="icon-pdf"></i> </a>
                     </div>
                     <h2>Manejando la pérdida de cabello y preocupaciones acerca de la imagen corporal</h2>
                     <span>Escuche el audio completo de esta página a continuación</span>
-                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
+                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/906621013%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
                     <br><br>
                     <p class="detail-pera">El cáncer puede cambiar su cuerpo de maneras inesperadas. Existen servicios disponibles que pueden ayudarlo con su aspecto y bienestar después de atravesar el cáncer.</p>
                     <p class="bold-text pt-pb">Centros de sanación de la Sociedad Americana contra el Cáncer:</p>
@@ -32,25 +32,24 @@
                     </ul>                    
                     <p class="bold-text pt-pb">Recursos adicionales:</p>
                     <ul class="left-side">
-                        <li><a (click)="logWebsite('https://alas-wings.org')" href='https://alas-wings.org' target='_blank'>ALAS-WINGS</a> (312-883-2527) ofrece sujetadores con prótesis, pelucas y prótesis sin ningún costo para pacientes  con cáncer de mama con recursos financieros limitados.</li>  
-                        <li><a (click)="logWebsite('https://www.secondactchicago.com')" href='https://www.secondactchicago.com' target='_blank'>Second Act</a> (773-525-2228) es un centro de recuperación del cáncer autorizado por la Junta Americana de Certificación de ortopedistas, especialistas en prótesis y pedortistas, que proporciona sujetadores, prótesis, ropa de compresión, pelucas y accesorios.</li> 
-                        <li><a (click)="logWebsite('https://lookgoodfeelbetter.org/virtual-workshops')" href='https://lookgoodfeelbetter.org/virtual-workshops' target='_blank'>Look Good Feel Better</a> es un programa que brinda tutoriales en persona y en línea para enseñar técnicas de estética a los pacientes que están recibiendo tratamiento para el cáncer.</li> 
-                        <li><a (click)="logWebsite('https://www.walgreens.com/topic/pharmacy/specialty-pharmacy/side-effect-help/feel-more-like-you.jsp')" href='https://www.walgreens.com/topic/pharmacy/specialty-pharmacy/side-effect-help/feel-more-like-you.jsp' target='_blank'>Feel More Like You</a> es un programa con asesores de imagen y farmacéuticos que ofrecen apoyo y ayuda para el control de los efectos secundarios del tratamiento del cáncer.</li> 
-                        <li><a (click)="logWebsite('https://thebreastcancercharities.org/feelingbeautifulagain')" href='https://thebreastcancercharities.org/feelingbeautifulagain' target='_blank'>Feeling Beautiful Again</a> propone un paquete de cuidados de belleza para quienes se someten a un tratamiento contra el cáncer con el fin de ayudar a controlar los efectos secundarios emocionales de la enfermedad.</li>  
+                        <li><a (click)="logWebsite('https://alas-wings.org')" href='https://alas-wings.org' target='_blank'>ALAS-WINGS</a> (312-883-2527) ofrece sostén con prótesis, pelucas y prótesis sin ningún costo para pacientes  con cáncer de mama con recursos financieros limitados.</li>  
+                        <li><a (click)="logWebsite('https://www.secondactchicago.com')" href='https://www.secondactchicago.com' target='_blank'>Second Act</a> (773-525-2228) es un centro de recuperación del cáncer autorizado por la Junta Americana de Certificación de ortopedistas, especialistas en prótesis, que proporciona sostén, prótesis, ropa de compresión, pelucas y accesorios.</li> 
+                        <li><a (click)="logWebsite('https://lookgoodfeelbetter.org/es')" href='https://lookgoodfeelbetter.org/es' target='_blank'>Look Good Feel Better</a> es un programa que brinda tutoriales en persona y en línea para enseñar técnicas de estética a los pacientes que están recibiendo tratamiento para el cáncer.</li> 
+                        <li><a (click)="logWebsite('https://www.walgreens.com/topic/pharmacy/specialty-pharmacy/side-effect-help/feel-more-like-you.jsp')" href='https://www.walgreens.com/topic/pharmacy/specialty-pharmacy/side-effect-help/feel-more-like-you.jsp' target='_blank'>Feel More Like You</a> es un programa con asesores de imagen y farmacéuticos que ofrecen apoyo y ayuda para el control de los efectos secundarios del tratamiento del cáncer.</li>
                     </ul>
                     <img src="assets/img/BodyImageConcerns_B.jpg" class="mt-20" width="100%" />
                 </div>   
             </div> 
             <div class="col-md-3 col-sm-12">  
                 <div class="check-detail pb-0 border-top">
-                    <p class="semibold-text light-height">Financial & Practical Matters</p> 
+                    <p class="semibold-text light-height">Cuestiones prácticas y financieras</p> 
                     <ul class="right-side-list mt-20"> 
                         <li><a [routerLink]="'/patient-resources/financial/cost'">Gestión del costo del tratamiento</a></li>
                         <li><a [routerLink]="'/patient-resources/financial/legal'">Cuestiones legales y laborales</a></li>
                         <li><a [routerLink]="'/patient-resources/financial/transportation'">Manejo del transporte y otras preocupaciones</a></li>
                         <li class="active" ><a [routerLink]="'/patient-resources/financial/bodyimage'">Manejando la pérdida de cabello y preocupaciones acerca de la imagen corporal</a></li>
                         <br><br>
-                        <li><a [routerLink]="'/patient-resources/financial'"> < REGRESAR A Financial & Practical Matters</a></li>
+                        <li><a [routerLink]="'/patient-resources/financial'"> < REGRESAR A Cuestiones prácticas y financieras</a></li>
                     </ul>
                 </div>
             </div> 

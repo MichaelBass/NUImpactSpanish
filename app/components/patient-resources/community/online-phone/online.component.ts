@@ -12,7 +12,7 @@ declare var SC;
 export class OnlineComponent implements OnInit {
 
   isFav: boolean = false;
-  label: string = "Support Online and by Phone";
+  label: string = "Apoyo en línea y por teléfono";
 
   constructor(private redcapService: RedcapService) { }
 

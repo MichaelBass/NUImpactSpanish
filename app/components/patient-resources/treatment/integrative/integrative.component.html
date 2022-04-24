@@ -5,7 +5,7 @@
             <li class="breadcrumb-item"><a href="#">Tablero</a></li>
               <li class="breadcrumb-item d-none"><a href="#">...</a></li>
               <li class="breadcrumb-item mob-hidden"><a href="#/patient-resources">Recursos para pacientes</a></li>
-              <li class="breadcrumb-item"><a href="#/patient-resources/treatment">Treatment Symptom Management</a></li>
+              <li class="breadcrumb-item"><a href="#/patient-resources/treatment">Gestión del tratamiento de síntomas</a></li>
             <li class="breadcrumb-item active mob-hidden" aria-current="page">Medicina integral</li>
             </ol>
         </nav>
@@ -13,12 +13,12 @@
             <div class="col-md-8 col-sm-12">
                 <div class="check-detail pt-0">
                     <div class="foods-btn">
-                        <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Agregar a favoritos' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
+                        <a (click)= "toggleFavorite()">{{ isFav ? 'Quitar de favoritos' : 'Agregar a favoritos' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
                         <a (click)= "logPDF('integrative.pdf')" href="assets/pdf/integrative.pdf" target='_blank'>Descargar pdf <i class="icon-pdf"></i> </a>
                     </div>
                     <h2>Medicina integral</h2>
                     <span>Escuche el audio completo de esta página a continuación</span>
-                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
+                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/906623260%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
                     <br><br>
                     <p class="detail-pera">La medicina integral combina terapias complementarias, como la acupuntura y el masaje, con terapias convencionales para tratar el cáncer, que ayudan a controlar los efectos secundarios y a mejorar el bienestar.</p>
                     <p class="detail-pera">Muchos pacientes diagnosticados con cáncer tratan terapias complementarias para cuidar su salud durante y después del tratamiento del cáncer. Si bien muchas terapias integrales pueden ser de gran ayuda, también existe el riesgo potencial de que ocurran interacciones con el tratamiento del cáncer y efectos adversos. Con el fin de garantizar los mejores resultados sin correr ningún riesgo, es importante informar al equipo de atención médica sobre las terapias complementarias utilizadas. Si tú o tu equipo tienen preguntas sobre las opciones que podrían ser más útiles, una consulta con un médico especializado en medicina integral puede ayudarte a alcanzar tus objetivos.</p>
@@ -37,14 +37,14 @@
             </div> 
             <div class="col-md-3 col-sm-12">  
                 <div class="check-detail pb-0 border-top">
-                    <p class="semibold-text light-height">Treatment Symptom Management</p> 
+                    <p class="semibold-text light-height">Gestión del tratamiento de síntomas</p> 
                     <ul class="right-side-list mt-20">
                         <li class="active" ><a [routerLink]="'/patient-resources/treatment/integrative'">Medicina integral</a></li>
                         <li><a [routerLink]="'/patient-resources/treatment/palliative'">Cuidados paliativos</a></li>
                         <li><a [routerLink]="'/patient-resources/treatment/rehabilitation'">Servicios de rehabilitación del cáncer</a></li>
                         <li><a [routerLink]="'/patient-resources/treatment/survivorship'">Servicios para la supervivencia del cáncer</a></li>
                         <br><br>
-                        <li><a [routerLink]="'/patient-resources/treatment'"> < REGRESAR A Treatment Symptom Management</a></li>
+                        <li><a [routerLink]="'/patient-resources/treatment'"> < REGRESAR A Gestión del tratamiento de síntomas</a></li>
                     </ul>
                 </div>
             </div> 

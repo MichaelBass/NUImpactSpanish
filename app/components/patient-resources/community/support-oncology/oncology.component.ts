@@ -12,7 +12,7 @@ declare var SC;
 export class OncologyComponent implements OnInit {
 
   isFav: boolean = false;
-  label: string = "Supportive Oncology at Northwestern Medicines";
+  label: string = "Oncología de apoyo en Northwestern Medicine";
 
   constructor(private redcapService: RedcapService) { }
 

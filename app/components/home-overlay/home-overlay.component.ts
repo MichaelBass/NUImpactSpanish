@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HelperService } from '../../services/helper.service';
+
 @Component({
 	selector: 'app-home-overlay',
 	templateUrl: './home-overlay.component.html',
@@ -12,7 +13,7 @@ export class HomeOverlayComponent implements OnInit {
 
 	ngOnInit() {
 		 this.isHidden = this.helper.getCookie('overlayVideoDisabled')!='disabled';
-		this.helper.debug('hidden',this.isHidden,this.helper.getCookie('overlayVideoDisabled'));
+		// this.helper.debug('hidden',this.isHidden,this.helper.getCookie('overlayVideoDisabled'));
 	}
 
 	skipVideo(){
@@ -23,4 +24,5 @@ export class HomeOverlayComponent implements OnInit {
 		this.skipVideo();
 		this.helper.setCookie('overlayVideoDisabled','disabled',365);
 	}
+
 }

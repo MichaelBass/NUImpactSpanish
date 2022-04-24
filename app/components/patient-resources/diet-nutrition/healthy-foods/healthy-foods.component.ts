@@ -13,7 +13,7 @@ declare var SC;
 export class HealthyFoodsComponent implements OnInit {
 
   isFav: boolean = false;
-  label: string = "Healthy Foods";
+  label: string = "Comidas saludables";
 
   constructor(private redcapService: RedcapService) { }
 

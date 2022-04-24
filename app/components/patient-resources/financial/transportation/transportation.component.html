@@ -5,7 +5,7 @@
             <li class="breadcrumb-item"><a href="#">Tablero</a></li>
               <li class="breadcrumb-item d-none"><a href="#">...</a></li>
               <li class="breadcrumb-item mob-hidden"><a href="#/patient-resources">Recursos para pacientes</a></li>
-              <li class="breadcrumb-item"><a href="#/patient-resources/financial">Financial & Practical Matters</a></li>
+              <li class="breadcrumb-item"><a href="#/patient-resources/financial">Cuestiones prácticas y financieras</a></li>
             <li class="breadcrumb-item active mob-hidden" aria-current="page">Manejo del transporte y otras preocupaciones</li>
             </ol>
         </nav>
@@ -13,12 +13,12 @@
             <div class="col-md-8 col-sm-12">
                 <div class="check-detail pt-0">
                     <div class="foods-btn">
-                        <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Agregar a favoritos' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
+                        <a (click)= "toggleFavorite()">{{ isFav ? 'Quitar de favoritos' : 'Agregar a favoritos' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
                         <a (click)= "logPDF('transportation.pdf')" href="assets/pdf/transportation.pdf" target='_blank'>Descargar pdf <i class="icon-pdf"></i> </a>
                     </div>
                     <h2>Manejo del transporte y otras preocupaciones</h2>
                     <span>Escuche el audio completo de esta página a continuación</span>
-                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
+                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/906621865%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
                     <br><br>
                     <p class="detail-pera">El tratamiento del cáncer requiere mucho tiempo y viajes frecuentes al centro de tratamiento. Los pacientes cuentan con ayuda para esto.</p>
                     <p class="bold-text pt-pb">Recursos de transporte</p>
@@ -26,8 +26,8 @@
                     <ul class="left-side">
                         <li><a (click)="logWebsite('https://www.cancer.org/es/')" href='https://www.cancer.org/es/' target='_blank'>Sociedad Americana contra el Cáncer (American Cancer Society, ACS)</a>(800-227-2345)  proporciona vales para asistir a citas en los autobuses y trenes de la Autoridad de Tránsito de Chicago (Chicago Transit Authority, CTA) y en los autobuses suburbanos y servicios de paratránsito de PACE.  La Sociedad Americana contra el Cáncer también cuenta con el programa Road to Recovery (Camino a la Recuperación), que pone en contacto a conductores voluntarios con personas que necesitan transporte para acudir a sus citas para el tratamiento del cáncer.</li>  
                         <li><a (click)="logWebsite('https://www.cancercare.org/espanol')" href='https://www.cancercare.org/espanol' target='_blank'>CancerCare</a> (800-813-4673) otorga subsidios anuales a las personas con cáncer para compensar el costo de estacionamiento u otros costos de transporte relacionados con el tratamiento.</li>      
-                        <li><a (click)="logWebsite('https://www.pacebus.com/sub/paratransit/default.asp')" href='https://www.pacebus.com/sub/paratransit/default.asp' target='_blank'>Servicios de paratránsito de PACE</a> (312-663-4357) es un servicio que permite a las personas mayores o con discapacidades inscritas en el programa organizar con antelación los viajes para las citas médicas.  Si actualmente está recibiendo tratamiento para el cáncer, puede solicitar una revisión rápida de la solicitud. Es posible que el costo de los viajes de PACE esté cubierto por los vales de la Sociedad Americana contra el Cáncer.</li>
-                        <li><a (click)="logWebsite('https://www.pacebus.com/sub/paratransit/TAP.asp')" href='https://www.pacebus.com/sub/paratransit/TAP.asp' target='_blank'>Taxi Access Program (Programa de acceso a taxis)</a> de la ciudad de Chicago: Los pacientes elegibles pueden tomar un taxi para asistir a las visitas del tratamiento (con un valor de hasta 30 USD) por el costo de 3 USD.  Este programa solo está disponible para los residentes de Chicago y cada persona puede realizar hasta 8 viajes de ida al día.</li>
+                        <li><a (click)="logWebsite('https://www.pacebus.com/es/paratransit')" href='https://www.pacebus.com/es/paratransit' target='_blank'>Servicios de paratránsito de PACE</a> (312-663-4357) es un servicio que permite a las personas mayores o con discapacidades inscritas en el programa organizar con antelación los viajes para las citas médicas.  Si actualmente está recibiendo tratamiento para el cáncer, puede solicitar una revisión rápida de la solicitud. Es posible que el costo de los viajes de PACE esté cubierto por los vales de la Sociedad Americana contra el Cáncer.</li>
+                        <li><a (click)="logWebsite('https://www.pacebus.com/es/tap')" href='https://www.pacebus.com/es/tap' target='_blank'>Taxi Access Program (Programa de acceso a taxis)</a> de la ciudad de Chicago: Los pacientes elegibles pueden tomar un taxi para asistir a las visitas del tratamiento (con un valor de hasta 30 USD) por el costo de 3 USD.  Este programa solo está disponible para los residentes de Chicago y cada persona puede realizar hasta 8 viajes de ida al día.</li>
                     </ul>                    
                     <p class="bold-text pt-pb">Comidas y alojamiento</p>
                     <ul class="left-side ">
@@ -41,14 +41,14 @@
             </div> 
             <div class="col-md-3 col-sm-12">  
                 <div class="check-detail pb-0 border-top">
-                    <p class="semibold-text light-height">Financial & Practical Matters</p> 
+                    <p class="semibold-text light-height">Cuestiones prácticas y financieras</p> 
                     <ul class="right-side-list mt-20"> 
                         <li><a [routerLink]="'/patient-resources/financial/cost'">Gestión del costo del tratamiento</a></li>
                         <li><a [routerLink]="'/patient-resources/financial/legal'">Cuestiones legales y laborales</a></li>
                         <li class="active" ><a [routerLink]="'/patient-resources/financial/transportation'">Manejo del transporte y otras preocupaciones</a></li>
                         <li><a [routerLink]="'/patient-resources/financial/bodyimage'">Manejando la pérdida de cabello y preocupaciones acerca de la imagen corporal</a></li>
                         <br><br>
-                        <li><a [routerLink]="'/patient-resources/financial'"> < REGRESAR A Financial & Practical Matters</a></li>
+                        <li><a [routerLink]="'/patient-resources/financial'"> < REGRESAR A Cuestiones prácticas y financieras</a></li>
                     </ul>
                 </div>
             </div> 

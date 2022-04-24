@@ -14,7 +14,7 @@ declare var SC;
 export class SunProtectionComponent implements OnInit {
 
   isFav: boolean = false;
-  label: string = "Sun Protection";
+  label: string = "Protección solar";
 
   constructor(private redcapService: RedcapService) { }
 

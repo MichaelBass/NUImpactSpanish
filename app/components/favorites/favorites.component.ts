@@ -26,19 +26,30 @@ export class FavoritesComponent implements OnInit {
     var _cards = this.card;
     var _favoritecards = this.redcapService.favoriteCards;
 
-    this.redcapService.getFavorites(timedSegment.user).subscribe( res => {
-      for (var i=0; i < res.length; i++){
-        console.log(res);
+    //console.log("How many resources: " + _favoritecards.length);
 
+    this.redcapService.getFavorites(timedSegment.user).subscribe( res => {
+
+      for (var i=0; i < res.length; i++){
+        let myfavorites = _favoritecards.filter((a) => a.label === res[i]);
+        if(myfavorites.length > 0){ 
+          _cards.push(myfavorites[0]);
+          //console.log("loading : " + myfavorites[0]);    
+        }
+      }
+
+      /*
+      for (var i=0; i < res.length; i++){
         for (var j=0; j < _favoritecards.length; j++){
           if(_favoritecards[j].label == res[i]){
             _cards.push(_favoritecards[j]);
-            console.log(_favoritecards[j].label);
           }
         }
-     
-
       }
+      */
+
+
+
     } );
 
   }

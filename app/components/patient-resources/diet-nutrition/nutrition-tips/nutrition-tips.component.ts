@@ -13,7 +13,7 @@ declare var SC;
 export class NutritionTipsComponent implements OnInit {
 
   isFav: boolean = false;
-  label: string = "Nutrition Tips";
+  label: string = "Consejos nutricionales";
 
   constructor(private redcapService: RedcapService) { }
 

@@ -14,7 +14,7 @@ declare var SC;
 export class SocialComponent implements OnInit {
 
   isFav: boolean = false;
-  label: string = "Social Support";
+  label: string = "Soporte social";
 
   constructor(private redcapService: RedcapService) { }
 

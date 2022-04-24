@@ -14,7 +14,7 @@ declare var SC;
 export class PalliativeComponent implements OnInit {
 
   isFav: boolean = false;
-  label: string = "Palliative Care";
+  label: string = "Cuidado paliativo";
 
   constructor(private redcapService: RedcapService) { }
 

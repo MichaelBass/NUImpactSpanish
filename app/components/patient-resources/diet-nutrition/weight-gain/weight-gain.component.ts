@@ -13,7 +13,7 @@ declare var SC;
 export class WeightGainComponent implements OnInit {
 
   isFav: boolean = false;
-  label: string = "Managing Weight Gain";
+  label: string = "Manejo del aumento de peso";
 
   constructor(private redcapService: RedcapService) { }
 
